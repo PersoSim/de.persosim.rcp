@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_SQlckDjUEeSelJkO-XchnA" elementId="de.persosim.rcp.application" bindingContexts="_SQlcmTjUEeSelJkO-XchnA">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_SQlckTjUEeSelJkO-XchnA" elementId="de.persosim.rcp.mainWindow" label="PersoSim GUI" width="600" height="600">
+    <children xsi:type="advanced:PerspectiveStack" xmi:id="_SQlcsDjUEeSelJkO-XchnA" elementId="de.persosim.rcp.perspectiveStack">
+      <children xsi:type="advanced:Perspective" xmi:id="_SQlcsTjUEeSelJkO-XchnA" elementId="de.persosim.rcp.perspective">
+        <children xsi:type="basic:PartSashContainer" xmi:id="_SQlcsjjUEeSelJkO-XchnA" elementId="de.persosim.rcp.partSashContainer" horizontal="true"/>
+      </children>
+    </children>
+    <mainMenu xmi:id="_SQlcqTjUEeSelJkO-XchnA" elementId="de.persosim.rcp.mainMenue">
+      <children xsi:type="menu:Menu" xmi:id="_SQlcqjjUEeSelJkO-XchnA" elementId="de.persosim.rcp.mainMenue.file" label="File">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_SQlcrTjUEeSelJkO-XchnA" elementId="de.persosim.rcp.mainMenue.file.quit" label="Quit" command="_SQlcnDjUEeSelJkO-XchnA"/>
+      </children>
+      <children xsi:type="menu:Menu" xmi:id="_SQlcrjjUEeSelJkO-XchnA" elementId="de.persosim.rcp.mainMenue.help" label="Help">
+        <children xsi:type="menu:HandledMenuItem" xmi:id="_SQlcrzjUEeSelJkO-XchnA" elementId="de.persosim.rcp.mainMenue.help.about" label="About" command="_SQlcpjjUEeSelJkO-XchnA"/>
+      </children>
+    </mainMenu>
+  </children>
+  <handlers xmi:id="_SQlcnTjUEeSelJkO-XchnA" elementId="de.persosim.rcp.handlers.quitCommandHandler" contributionURI="bundleclass://de.persosim.rcp/de.persosim.rcp.handlers.QuitHandler" command="_SQlcnDjUEeSelJkO-XchnA"/>
+  <handlers xmi:id="_SQlcpzjUEeSelJkO-XchnA" elementId="de.persosim.rcp.handlers.aboutCommandHandler" contributionURI="bundleclass://de.persosim.rcp/de.persosim.rcp.handlers.AboutHandler" command="_SQlcpjjUEeSelJkO-XchnA"/>
+  <bindingTables xmi:id="_SQlcnjjUEeSelJkO-XchnA" bindingContext="_SQlcmTjUEeSelJkO-XchnA">
+    <bindings xmi:id="_SQlcnzjUEeSelJkO-XchnA" keySequence="M1+Q" command="_SQlcnDjUEeSelJkO-XchnA"/>
+    <bindings xmi:id="_SQlcojjUEeSelJkO-XchnA" keySequence="M1+O"/>
+    <bindings xmi:id="_SQlcpTjUEeSelJkO-XchnA" keySequence="M1+S"/>
+    <bindings xmi:id="_SQlcqDjUEeSelJkO-XchnA" keySequence="M1+A" command="_SQlcpjjUEeSelJkO-XchnA"/>
+  </bindingTables>
+  <rootContext xmi:id="_SQlcmTjUEeSelJkO-XchnA" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">
+    <children xmi:id="_SQlcmjjUEeSelJkO-XchnA" elementId="org.eclipse.ui.contexts.window" name="In Windows"/>
+    <children xmi:id="_SQlcmzjUEeSelJkO-XchnA" elementId="org.eclipse.ui.contexts.dialog" name="In Dialogs"/>
+  </rootContext>
+  <commands xmi:id="_SQlcnDjUEeSelJkO-XchnA" elementId="org.eclipse.ui.file.exit" commandName="Quit Command"/>
+  <commands xmi:id="_SQlcpjjUEeSelJkO-XchnA" elementId="org.eclipse.ui.help.aboutAction" commandName="About Command"/>
+  <addons xmi:id="_SQlckjjUEeSelJkO-XchnA" elementId="org.eclipse.e4.core.commands.service" contributionURI="bundleclass://org.eclipse.e4.core.commands/org.eclipse.e4.core.commands.CommandServiceAddon"/>
+  <addons xmi:id="_SQlckzjUEeSelJkO-XchnA" elementId="org.eclipse.e4.ui.contexts.service" contributionURI="bundleclass://org.eclipse.e4.ui.services/org.eclipse.e4.ui.services.ContextServiceAddon"/>
+  <addons xmi:id="_SQlclDjUEeSelJkO-XchnA" elementId="org.eclipse.e4.ui.bindings.service" contributionURI="bundleclass://org.eclipse.e4.ui.bindings/org.eclipse.e4.ui.bindings.BindingServiceAddon"/>
+  <addons xmi:id="_SQlclTjUEeSelJkO-XchnA" elementId="org.eclipse.e4.ui.workbench.commands.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.CommandProcessingAddon"/>
+  <addons xmi:id="_SQlcljjUEeSelJkO-XchnA" elementId="org.eclipse.e4.ui.workbench.handler.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.HandlerProcessingAddon"/>
+  <addons xmi:id="_SQlclzjUEeSelJkO-XchnA" elementId="org.eclipse.e4.ui.workbench.contexts.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench/org.eclipse.e4.ui.internal.workbench.addons.ContextProcessingAddon"/>
+  <addons xmi:id="_SQlcmDjUEeSelJkO-XchnA" elementId="org.eclipse.e4.ui.workbench.bindings.model" contributionURI="bundleclass://org.eclipse.e4.ui.workbench.swt/org.eclipse.e4.ui.workbench.swt.util.BindingProcessingAddon"/>
+</application:Application>

@@ -17,6 +17,7 @@
 
    <plugins>
       <plugin id="com.ibm.icu"/>
+      <plugin id="de.persosim.driver.connector"/>
       <plugin id="de.persosim.driver.connector.ui"/>
       <plugin id="de.persosim.rcp"/>
       <plugin id="de.persosim.simulator"/>

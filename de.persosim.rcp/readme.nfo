@@ -1,0 +1,6 @@
+The contents of de.persosim.rcp resemble an Eclipse E4 RCP application.
+For the application to run please ensure that you meet the following requirements:
+
+1) You are using Eclipse version 4.4 or above
+2) You have installed Eclipse E4 Tools (http://download.eclipse.org/e4/downloads/)
+ 

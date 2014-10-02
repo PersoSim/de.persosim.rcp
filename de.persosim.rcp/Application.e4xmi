@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <application:Application xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:advanced="http://www.eclipse.org/ui/2010/UIModel/application/ui/advanced" xmlns:application="http://www.eclipse.org/ui/2010/UIModel/application" xmlns:basic="http://www.eclipse.org/ui/2010/UIModel/application/ui/basic" xmlns:menu="http://www.eclipse.org/ui/2010/UIModel/application/ui/menu" xmi:id="_SQlckDjUEeSelJkO-XchnA" elementId="de.persosim.rcp.application" bindingContexts="_SQlcmTjUEeSelJkO-XchnA">
-  <children xsi:type="basic:TrimmedWindow" xmi:id="_SQlckTjUEeSelJkO-XchnA" elementId="de.persosim.rcp.mainWindow" label="PersoSim GUI" width="1200" height="600">
+  <children xsi:type="basic:TrimmedWindow" xmi:id="_SQlckTjUEeSelJkO-XchnA" elementId="de.persosim.rcp.mainWindow" label="PersoSim GUI" iconURI="platform:/plugin/de.persosim.rcp/icons/persosim.png" width="1200" height="600">
     <children xsi:type="advanced:PerspectiveStack" xmi:id="_SQlcsDjUEeSelJkO-XchnA" elementId="de.persosim.rcp.perspectiveStack">
       <children xsi:type="advanced:Perspective" xmi:id="_SQlcsTjUEeSelJkO-XchnA" elementId="de.persosim.rcp.perspective">
         <children xsi:type="basic:PartSashContainer" xmi:id="_SQlcsjjUEeSelJkO-XchnA" elementId="de.persosim.rcp.partSashContainer" horizontal="true"/>

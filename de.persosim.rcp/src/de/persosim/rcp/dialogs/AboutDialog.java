@@ -1,6 +1,9 @@
 package de.persosim.rcp.dialogs;
 
 import java.awt.Desktop;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.io.RandomAccessFile;
 import java.net.MalformedURLException;
 import java.net.URI;
 import java.net.URISyntaxException;
@@ -16,9 +19,7 @@ import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.graphics.ImageData;
-import org.eclipse.swt.graphics.PaletteData;
 import org.eclipse.swt.graphics.Point;
-import org.eclipse.swt.graphics.RGB;
 import org.eclipse.swt.layout.FormAttachment;
 import org.eclipse.swt.layout.FormData;
 import org.eclipse.swt.layout.FormLayout;
@@ -43,34 +44,35 @@ public class AboutDialog extends Dialog {
 	public AboutDialog(Shell parentShell) {
 		super(parentShell);
 
-		PaletteData paletteData = new PaletteData(new RGB[] {
-				new RGB(255, 0, 0), new RGB(0, 255, 0) });
-		ImageData imageData = new ImageData(48, 48, 1, paletteData);
-		for (int x = 11; x < 35; x++) {
-			for (int y = 11; y < 35; y++) {
-				imageData.setPixel(x, y, 1);
-			}
-		}
-
-		// try {
-		// URL url = this.getClass().getResource("/icons/persosim.png");
-		// File file = new File(url.toURI());
-		//
-		// System.out.println("file exists: " + file.exists());
-		// } catch (URISyntaxException e) {
-		// // TODO Auto-generated catch block
-		// e.printStackTrace();
-		// }
-
-		image = new Image(Display.getDefault(), "persosim.png");
+		image = new Image(Display.getDefault(), "../../de.persosim.rcp/de.persosim.rcp/icons/persosim.png");
+		
 		ImageData imgData = image.getImageData();
 		imgData = imgData.scaledTo(40, 40);
 		image = new Image(Display.getDefault(), imgData);
 
-		if (image == null) {
-			image = new Image(Display.getDefault(), imageData);
+	}
+	
+	public static boolean writeToFile(String fileName, byte[] data) {
+		RandomAccessFile raf = null;
+		
+		try {
+			raf = new RandomAccessFile(fileName, "rw");
+			raf.write(data);
+			raf.close();
+			return true;
+		} catch (FileNotFoundException e) {
+			return false;
+		} catch (IOException e) {
+			return false;
+		}finally{
+			if(raf != null) {
+				try {
+					raf.close();
+				} catch (IOException e) {
+					// do nothing
+				}
+			}
 		}
-
 	}
 
 	@Override
@@ -112,7 +114,7 @@ public class AboutDialog extends Dialog {
 		label2.setLayoutData(formData2);
 
 		Label label3 = new Label(upper, SWT.NONE);
-		label3.setText("vX.x");
+		label3.setText("");
 		label3.setFont(new Font(upper.getDisplay(), FONT_NAME, 12, SWT.NONE));
 
 		FormData formData3 = new FormData();

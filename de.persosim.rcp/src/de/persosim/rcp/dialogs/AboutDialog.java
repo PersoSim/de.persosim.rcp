@@ -2,7 +2,6 @@ package de.persosim.rcp.dialogs;
 
 import java.io.IOException;
 import java.io.InputStream;
-import java.net.MalformedURLException;
 import java.net.URL;
 
 import javax.inject.Inject;
@@ -121,8 +120,8 @@ public class AboutDialog extends Dialog {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				try {
-					RcpUtils.openWebPage(new URL(e.text));
-				} catch (MalformedURLException ex) {
+					RcpUtils.openInBrowser(new URL(e.text));
+				} catch (IOException ex) {
 					ex.printStackTrace();
 					
 					MessageDialog.openError(parent.getShell(), "Error", "Unable to open URL: " + PERSOSIM_URL);

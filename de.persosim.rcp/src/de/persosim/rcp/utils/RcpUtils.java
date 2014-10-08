@@ -1,6 +1,7 @@
 package de.persosim.rcp.utils;
 
 import java.awt.Desktop;
+import java.io.IOException;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.net.URL;
@@ -13,7 +14,15 @@ import java.net.URL;
  */
 public class RcpUtils {
 	
-	public static void openWebPage(URI uri) {
+	/**
+	 * This method opens the provided URI with the native system's default
+	 * browser if supported.
+	 * 
+	 * @param uri
+	 *            the URI to open
+	 * @throws IOException 
+	 */
+	public static void openInBrowser(URI uri) throws IOException {
 		Desktop desktop = null;
 		
 		if(Desktop.isDesktopSupported()) {
@@ -21,17 +30,20 @@ public class RcpUtils {
 		}
 		
 		if ((desktop != null) && desktop.isSupported(Desktop.Action.BROWSE)) {
-			try {
-				desktop.browse(uri);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
+			desktop.browse(uri);
 		}
 	}
-
-	public static void openWebPage(URL url) {
+	
+	/**
+	 * This method opens the provided URL with the native system's default
+	 * browser if supported.
+	 * 
+	 * @param url
+	 * @throws IOException 
+	 */
+	public static void openInBrowser(URL url) throws IOException {
 		try {
-			openWebPage(url.toURI());
+			openInBrowser(url.toURI());
 		} catch (URISyntaxException e) {
 			e.printStackTrace();
 		}

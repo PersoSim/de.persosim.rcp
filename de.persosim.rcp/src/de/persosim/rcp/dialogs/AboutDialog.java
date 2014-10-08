@@ -9,6 +9,7 @@ import javax.inject.Inject;
 
 import org.eclipse.e4.ui.workbench.IWorkbench;
 import org.eclipse.jface.dialogs.Dialog;
+import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -31,7 +32,9 @@ import org.eclipse.swt.widgets.Shell;
 import de.persosim.rcp.utils.RcpUtils;
 
 public class AboutDialog extends Dialog {
-
+	
+	public static final String PERSOSIM_URL = "http://www.persosim.de";
+	
 	private static final String FONT_NAME = "Helvetica";
 
 	private Image image = null;
@@ -64,7 +67,9 @@ public class AboutDialog extends Dialog {
 	}
 
 	@Override
-	protected Control createDialogArea(Composite parent) {
+	protected Control createDialogArea(Composite parentComposite) {
+		final Composite parent = parentComposite;
+		
 		parent.setLayout(new GridLayout(1, false));
 
 		Composite container = (Composite) super.createDialogArea(parent);
@@ -110,7 +115,7 @@ public class AboutDialog extends Dialog {
 		lower.setLayout(new GridLayout(1, false));
 
 		Link link = new Link(lower, SWT.NONE);
-		link.setText("Visit our web site at <a href=\"http://www.persosim.de\">http://www.persosim.de</a>");
+		link.setText("Visit our web site at <a href=\"" + PERSOSIM_URL + "\">" + PERSOSIM_URL + "</a>");
 		link.setSize(400, 100);
 		link.addSelectionListener(new SelectionAdapter() {
 			@Override
@@ -118,8 +123,9 @@ public class AboutDialog extends Dialog {
 				try {
 					RcpUtils.openWebPage(new URL(e.text));
 				} catch (MalformedURLException ex) {
-					// TODO Auto-generated catch block
 					ex.printStackTrace();
+					
+					MessageDialog.openError(parent.getShell(), "Error", "Unable to open URL: " + PERSOSIM_URL);
 				}
 			}
 		});

@@ -3,6 +3,7 @@ package de.persosim.rcp.dialogs;
 import java.awt.Desktop;
 import java.io.FileNotFoundException;
 import java.io.IOException;
+import java.io.InputStream;
 import java.io.RandomAccessFile;
 import java.net.MalformedURLException;
 import java.net.URI;
@@ -36,19 +37,25 @@ public class AboutDialog extends Dialog {
 
 	private static final String FONT_NAME = "Helvetica";
 
-	private Image image;
+	private Image image = null;
 
 	@Inject
 	IWorkbench workbench;
 
 	public AboutDialog(Shell parentShell) {
 		super(parentShell);
-
-		image = new Image(Display.getDefault(), "../../de.persosim.rcp/de.persosim.rcp/icons/persosim.png");
 		
-		ImageData imgData = image.getImageData();
-		imgData = imgData.scaledTo(40, 40);
-		image = new Image(Display.getDefault(), imgData);
+		try {
+		    URL url = new URL("platform:/plugin/de.persosim.rcp/icons/persosim.png");
+		    InputStream inputStream = url.openConnection().getInputStream();		    
+		    image = new Image(Display.getDefault(), inputStream);
+		    
+		    ImageData imgData = image.getImageData();
+			imgData = imgData.scaledTo(40, 40);
+			image = new Image(Display.getDefault(), imgData);
+		} catch (IOException e) {
+		    e.printStackTrace();
+		}
 
 	}
 	
@@ -95,7 +102,7 @@ public class AboutDialog extends Dialog {
 		layout.marginHeight = 5;
 		layout.marginWidth = 5;
 		upper.setLayout(layout);
-
+		
 		Label label1 = new Label(upper, SWT.NONE);
 		label1.setImage(image);
 		label1.setSize(label1.computeSize(10, 10));

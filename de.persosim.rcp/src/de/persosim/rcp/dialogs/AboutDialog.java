@@ -1,13 +1,8 @@
 package de.persosim.rcp.dialogs;
 
-import java.awt.Desktop;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.io.InputStream;
-import java.io.RandomAccessFile;
 import java.net.MalformedURLException;
-import java.net.URI;
-import java.net.URISyntaxException;
 import java.net.URL;
 
 import javax.inject.Inject;
@@ -33,6 +28,8 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Link;
 import org.eclipse.swt.widgets.Shell;
 
+import de.persosim.rcp.utils.RcpUtils;
+
 public class AboutDialog extends Dialog {
 
 	private static final String FONT_NAME = "Helvetica";
@@ -57,29 +54,6 @@ public class AboutDialog extends Dialog {
 		    e.printStackTrace();
 		}
 
-	}
-	
-	public static boolean writeToFile(String fileName, byte[] data) {
-		RandomAccessFile raf = null;
-		
-		try {
-			raf = new RandomAccessFile(fileName, "rw");
-			raf.write(data);
-			raf.close();
-			return true;
-		} catch (FileNotFoundException e) {
-			return false;
-		} catch (IOException e) {
-			return false;
-		}finally{
-			if(raf != null) {
-				try {
-					raf.close();
-				} catch (IOException e) {
-					// do nothing
-				}
-			}
-		}
 	}
 
 	@Override
@@ -142,7 +116,7 @@ public class AboutDialog extends Dialog {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
 				try {
-					openWebPage(new URL(e.text));
+					RcpUtils.openWebPage(new URL(e.text));
 				} catch (MalformedURLException ex) {
 					// TODO Auto-generated catch block
 					ex.printStackTrace();
@@ -151,30 +125,6 @@ public class AboutDialog extends Dialog {
 		});
 
 		return container;
-	}
-
-	public static void openWebPage(URI uri) {
-		Desktop desktop = null;
-		
-		if(Desktop.isDesktopSupported()) {
-			desktop = Desktop.getDesktop();
-		}
-		
-		if ((desktop != null) && desktop.isSupported(Desktop.Action.BROWSE)) {
-			try {
-				desktop.browse(uri);
-			} catch (Exception e) {
-				e.printStackTrace();
-			}
-		}
-	}
-
-	public static void openWebPage(URL url) {
-		try {
-			openWebPage(url.toURI());
-		} catch (URISyntaxException e) {
-			e.printStackTrace();
-		}
 	}
 
 	@Override

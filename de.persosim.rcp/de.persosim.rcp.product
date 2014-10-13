@@ -15,6 +15,18 @@
 
    <windowImages/>
 
+   <splash
+      location="de.persosim.rcp" />
+   <launcher name="PersoSim">
+      <solaris/>
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+   <vm>
+   </vm>
+
    <plugins>
       <plugin id="com.ibm.icu"/>
       <plugin id="de.persosim.driver.connector"/>

@@ -15,7 +15,6 @@ import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.graphics.Font;
 import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.graphics.ImageData;
-import org.eclipse.swt.graphics.Point;
 import org.eclipse.swt.layout.FormAttachment;
 import org.eclipse.swt.layout.FormData;
 import org.eclipse.swt.layout.FormLayout;
@@ -115,7 +114,7 @@ public class AboutDialog extends Dialog {
 
 		Link link = new Link(lower, SWT.NONE);
 		link.setText("Visit our web site at <a href=\"" + PERSOSIM_URL + "\">" + PERSOSIM_URL + "</a>");
-		link.setSize(400, 100);
+		link.setSize(link.computeSize(SWT.DEFAULT, SWT.DEFAULT));
 		link.addSelectionListener(new SelectionAdapter() {
 			@Override
 			public void widgetSelected(SelectionEvent e) {
@@ -128,7 +127,6 @@ public class AboutDialog extends Dialog {
 				}
 			}
 		});
-
 		return container;
 	}
 
@@ -136,11 +134,6 @@ public class AboutDialog extends Dialog {
 	protected void configureShell(Shell newShell) {
 		super.configureShell(newShell);
 		newShell.setText("About PersoSim");
-	}
-
-	@Override
-	protected Point getInitialSize() {
-		return new Point(350, 200);
 	}
 
 }

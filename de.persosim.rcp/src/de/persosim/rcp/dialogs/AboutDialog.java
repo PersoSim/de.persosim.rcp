@@ -6,6 +6,8 @@ import java.net.URL;
 
 import javax.inject.Inject;
 
+import org.eclipse.core.runtime.IProduct;
+import org.eclipse.core.runtime.Platform;
 import org.eclipse.e4.ui.workbench.IWorkbench;
 import org.eclipse.jface.dialogs.Dialog;
 import org.eclipse.jface.dialogs.MessageDialog;
@@ -26,6 +28,8 @@ import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Link;
 import org.eclipse.swt.widgets.Shell;
+import org.osgi.framework.Bundle;
+import org.osgi.framework.Version;
 
 import de.persosim.rcp.utils.RcpUtils;
 
@@ -98,7 +102,7 @@ public class AboutDialog extends Dialog {
 		label2.setLayoutData(formData2);
 
 		Label label3 = new Label(upper, SWT.NONE);
-		label3.setText("v0.3.0"); //FIXME extract this number from the bundle/product version
+		label3.setText(getProductVersion());
 		label3.setFont(new Font(upper.getDisplay(), FONT_NAME, 12, SWT.NONE));
 
 		FormData formData3 = new FormData();
@@ -135,5 +139,17 @@ public class AboutDialog extends Dialog {
 		super.configureShell(newShell);
 		newShell.setText("About PersoSim");
 	}
+	
+	/**
+	 * This method returns the bundleversion as a String
+	 * @return version
+	 */
+	public static String getProductVersion() {
+        final IProduct product = Platform.getProduct();
+        final Bundle bundle = product.getDefiningBundle();
+        final Version version = bundle.getVersion();
+        return version.toString();
+    }
+	
 
 }

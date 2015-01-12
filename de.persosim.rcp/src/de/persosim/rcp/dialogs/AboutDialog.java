@@ -98,7 +98,7 @@ public class AboutDialog extends Dialog {
 		label2.setLayoutData(formData2);
 
 		Label label3 = new Label(upper, SWT.NONE);
-		label3.setText("v0.3.0"); //FIXME extract this number from the bundle/product version
+		label3.setText("v0.5.0"); //FIXME extract this number from the bundle/product version
 		label3.setFont(new Font(upper.getDisplay(), FONT_NAME, 12, SWT.NONE));
 
 		FormData formData3 = new FormData();

@@ -125,6 +125,7 @@
       <plugin id="org.eclipse.ui.workbench"/>
       <plugin id="org.globaltester.cryptoprovider"/>
       <plugin id="org.globaltester.cryptoprovider.bc"/>
+      <plugin id="org.globaltester.logging"/>
       <plugin id="org.globaltester.logging.consoleLogger"/>
       <plugin id="org.globaltester.logging.filterService"/>
       <plugin id="org.globaltester.logging.formatService"/>

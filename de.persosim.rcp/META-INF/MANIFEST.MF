@@ -16,3 +16,6 @@ Require-Bundle: javax.inject;bundle-version="1.0.0",
  javax.annotation,
  de.persosim.simulator;bundle-version="0.1.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
+Bundle-Activator: de.persosim.rcp.Activator
+Bundle-Vendor: HJP Consulting GmbH
+Bundle-ActivationPolicy: lazy

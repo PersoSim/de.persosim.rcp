@@ -12,6 +12,7 @@ import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
 import de.persosim.simulator.PersoSim;
+import de.persosim.simulator.Simulator;
 import de.persosim.simulator.perso.Personalization;
 import de.persosim.simulator.perso.PersonalizationFactory;
 import de.persosim.simulator.ui.parts.PersoSimGuiMain;
@@ -21,7 +22,7 @@ public class Activator implements BundleActivator {
 	@Override
 	public void start(BundleContext context) throws Exception {
 		de.persosim.simulator.Activator.getDefault().enableService();
-		getSimAndConnectToNativeDriver();
+		startSimAndConnectToNativeDriver();
 	}
 
 	@Override
@@ -32,10 +33,10 @@ public class Activator implements BundleActivator {
 	/**
 	 * This method handles the connection to the simulator. Its primary task is
 	 * to ensure the simulator is up and running when a connection is
-	 * initialized. If the simulator is not found to be running a default FIXME JGE the implementation is NOT conditional!
-	 * personalization is loaded.
+	 * initialized. This method uses the {@link Simulator} provided by the
+	 * {@link de.persosim.simulator.Activator}.
 	 */
-	private void getSimAndConnectToNativeDriver() {
+	private void startSimAndConnectToNativeDriver() {
 		    de.persosim.simulator.Activator persoSimActivator = de.persosim.simulator.Activator.getDefault();
 		    PersoSim sim = persoSimActivator.getSim();
 		    try {

@@ -15,7 +15,7 @@ import de.persosim.simulator.PersoSim;
 import de.persosim.simulator.Simulator;
 import de.persosim.simulator.perso.Personalization;
 import de.persosim.simulator.perso.PersonalizationFactory;
-import de.persosim.simulator.ui.parts.PersoSimGuiMain;
+import de.persosim.simulator.ui.parts.PersoSimPart;
 
 public class Activator implements BundleActivator {
 
@@ -56,14 +56,14 @@ public class Activator implements BundleActivator {
 	 * @throws IOException
 	 */
 	private Personalization getDefaultPersonalization() throws IOException {
-		Bundle plugin = Platform.getBundle(PersoSimGuiMain.DE_PERSOSIM_SIMULATOR_BUNDLE);
-		URL url = plugin.getEntry (PersoSimGuiMain.PERSO_PATH);
+		Bundle plugin = Platform.getBundle(PersoSimPart.DE_PERSOSIM_SIMULATOR_BUNDLE);
+		URL url = plugin.getEntry (PersoSimPart.PERSO_PATH);
 		URL resolvedUrl;
 		
 		resolvedUrl = FileLocator.resolve(url);
 		
 		File folder = new File(resolvedUrl.getFile());
-		String pathString = folder.getAbsolutePath() + File.separator + PersoSimGuiMain.PERSO_FILE;
+		String pathString = folder.getAbsolutePath() + File.separator + PersoSimPart.PERSO_FILE;
 		
 		System.out.println("Loading default personalization from: " + pathString);
 		

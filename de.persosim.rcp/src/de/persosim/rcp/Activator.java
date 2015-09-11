@@ -12,7 +12,6 @@ import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
 import de.persosim.simulator.PersoSim;
-import de.persosim.simulator.Simulator;
 import de.persosim.simulator.perso.Personalization;
 import de.persosim.simulator.perso.PersonalizationFactory;
 import de.persosim.simulator.ui.parts.PersoSimPart;

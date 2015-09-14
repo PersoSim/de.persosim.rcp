@@ -5,7 +5,7 @@
          id="product"
          point="org.eclipse.core.runtime.products">
       <product
-            name="PersoSim RCP"
+            name="POSeIDAS RCP"
             application="org.eclipse.e4.ui.workbench.swt.E4Application">
          <property
                name="applicationCSS"
@@ -13,7 +13,7 @@
          </property>
          <property
                name="appName"
-               value="PersoSim RCP">
+               value="POSeIDAS RCP">
          </property>
       </product>
    </extension>

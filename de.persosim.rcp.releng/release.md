@@ -8,6 +8,17 @@ All required steps for preparation and build of a releasable product are already
 
 Test it
 -------
+1. [ ] __Test environment__  
+ - Tested by:  
+ 
+ - Date:
+ 
+ - Version/Tag/Revision:
+ 
+ - Operating system:  
+ 
+ - JDK:  
+
 1. [ ] __Run PersoSim__  
 Run PersoSim and check the following
  - [ ] GUI started

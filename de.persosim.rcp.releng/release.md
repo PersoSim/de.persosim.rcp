@@ -26,7 +26,7 @@ Run PersoSim and check the following
  - [ ] no errors reported in the console
 
 1. [ ] __Simulate certification test__  
-Start PersoSim and load a GT_Personalization from file. 
+Start PersoSim and load `DefaultPersoGt` from file. 
 Run applicable tests from GlobalTester Prove ePA.
  - [ ] Layer 6
  - [ ] Layer 7

@@ -9,6 +9,7 @@
 
   <modules>
     <module>../../de.persosim.driver.connector/de.persosim.driver.connector</module>
+    <module>../../de.persosim.driver.connector/de.persosim.driver.connector.test</module>
     <module>../../de.persosim.driver.connector/de.persosim.driver.connector.ui</module>
     <module>../../de.persosim.rcp/de.persosim.rcp</module>
     <module>../../de.persosim.rcp/de.persosim.rcp.feature</module>
@@ -16,6 +17,7 @@
     <module>../../de.persosim.simulator/de.persosim.simulator</module>
     <module>../../de.persosim.simulator/de.persosim.simulator.adapter.socket</module>
     <module>../../de.persosim.simulator/de.persosim.simulator.ui</module>
+    <module>../../de.persosim.simulator/de.persosim.simulator.test</module>
     <module>../../org.globaltester.cryptoprovider/org.globaltester.cryptoprovider</module>
     <module>../../org.globaltester.cryptoprovider/org.globaltester.cryptoprovider.bc</module>
     <module>../../org.globaltester.cryptoprovider/org.globaltester.cryptoprovider.sc</module>
@@ -23,5 +25,6 @@
     <module>../../org.globaltester.logging/org.globaltester.logging.consoleLogger</module>
     <module>../../org.globaltester.logging/org.globaltester.logging.fileLogger</module>
     <module>../../org.globaltester.simulator/org.globaltester.simulator</module>
+    <module>../../org.globaltester.base/org.globaltester.base.test</module>
   </modules>
 </project>

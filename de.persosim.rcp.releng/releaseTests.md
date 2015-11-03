@@ -1,23 +1,6 @@
-Release de.persosim.rcp
-=======================
-This document describes the steps necessary to create a product release.
-
-Prepare and build the release
------------------------------
-All required steps for preparation and build of a releasable product are already covered by the overall release process description which can be found in [../../com.hjp.releng/com.hjp.releng/doc/release.md].
-
-Test it
--------
-1. [ ] __Test environment__  
- - Tested by:  
- 
- - Date:
- 
- - Version/Tag/Revision:
- 
- - Operating system:  
- 
- - JDK:  
+Releasetests de.persosim.rcp
+============================
+This document describes validation tests that shall be performed on the final product artifacts immediately before publishing. These tests focus on overall product quality and completeness (e.g. inclusion/integration of required features). For a complete test coverage please also refer to tests defined in the according bundles.
 
 1. [ ] __Run PersoSim__  
 Run PersoSim and check the following

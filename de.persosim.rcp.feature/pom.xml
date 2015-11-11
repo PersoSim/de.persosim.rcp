@@ -10,6 +10,6 @@
   </parent>
   <groupId>de.persosim</groupId>
   <artifactId>de.persosim.rcp.feature</artifactId>
-  <version>0.0.1-SNAPSHOT</version>
+  <version>0.7.0</version>
   <packaging>eclipse-feature</packaging>
 </project>

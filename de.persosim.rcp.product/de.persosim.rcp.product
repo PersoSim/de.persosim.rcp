@@ -138,6 +138,7 @@
       <plugin id="org.eclipse.equinox.ds" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+      <plugin id="org.globaltester.cryptoprovider" autoStart="true" startLevel="1" />
       <plugin id="org.globaltester.cryptoprovider.bc" autoStart="true" startLevel="1" />
    </configurations>
 

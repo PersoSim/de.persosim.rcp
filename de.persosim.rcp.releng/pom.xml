@@ -23,6 +23,7 @@
     <module>../../org.globaltester.cryptoprovider/org.globaltester.cryptoprovider.bc</module>
     <module>../../org.globaltester.cryptoprovider/org.globaltester.cryptoprovider.sc</module>
     <module>../../org.globaltester.cryptoprovider/org.globaltester.cryptoprovider</module>
+    <module>../../org.globaltester.lib.jmockit/org.globaltester.lib.jmockit</module>
     <module>../../org.globaltester.logging/org.globaltester.logging.consoleLogger</module>
     <module>../../org.globaltester.logging/org.globaltester.logging.fileLogger</module>
     <module>../../org.globaltester.logging/org.globaltester.logging</module>

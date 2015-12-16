@@ -18,8 +18,6 @@
     <module>../../de.persosim.simulator/de.persosim.simulator.test</module>
     <module>../../de.persosim.simulator/de.persosim.simulator.ui</module>
     <module>../../de.persosim.simulator/de.persosim.simulator</module>
-    <module>../../org.globaltester.base/org.globaltester.base.test</module>
-    <module>../../org.globaltester.base/org.globaltester.base</module>
     <module>../../org.globaltester.cryptoprovider/org.globaltester.cryptoprovider.bc</module>
     <module>../../org.globaltester.cryptoprovider/org.globaltester.cryptoprovider.sc</module>
     <module>../../org.globaltester.cryptoprovider/org.globaltester.cryptoprovider</module>

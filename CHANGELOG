@@ -1,0 +1,4 @@
+Version 0.8.0 (18.12.2015)
+
+* Use the jMockit library provided as org.globaltester.lib.jmockit
+* Correctly autostart org.globaltester.cryptoprovider

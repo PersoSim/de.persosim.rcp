@@ -9,7 +9,7 @@
 
   <artifactId>de.persosim.rcp.product</artifactId>
   <packaging>eclipse-repository</packaging>
-  <version>0.8.0</version>
+  <version>0.8.1</version>
 
   <build>
     <plugins>

@@ -2,6 +2,22 @@ Version 0.8.1 (29.01.2016)
 
 * Update pom.xml
 
+* de.persosim.driver.connector updated to version 0.8.0
+
+* de.persosim.simulator updated to version 0.8.1
+  * Added reduced CV certificate & reduced body as superclasses for old ones
+  * improved log output
+  * fixed encoding used for signing
+  * use information about key encoding provided by CertificateRole
+  * adapted encoding of certs to reflect role (incl conditional objects)
+
+* org.globaltester.cryptoprovider updated to version 0.8.1
+
+* org.globaltester.lib.jmockit updated to version 0.1.1
+
+* org.globaltester.logging updated to version 0.6.1
+
+* org.globaltester.parent updated to version 0.1.1
 
 Version 0.8.0 (18.12.2015)
 

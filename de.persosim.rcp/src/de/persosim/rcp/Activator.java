@@ -23,7 +23,7 @@ public class Activator implements BundleActivator {
 		de.persosim.simulator.Activator.getDefault().enableService();
 		startSimAndConnectToNativeDriver();
 	}
-
+	
 	@Override
 	public void stop(BundleContext context) throws Exception {
 		de.persosim.simulator.Activator.getDefault().disableService();
@@ -36,18 +36,18 @@ public class Activator implements BundleActivator {
 	 * {@link de.persosim.simulator.Activator}.
 	 */
 	private void startSimAndConnectToNativeDriver() {
-		    de.persosim.simulator.Activator persoSimActivator = de.persosim.simulator.Activator.getDefault();
-		    PersoSim sim = persoSimActivator.getSim();
-		    try {
-		    	sim.startSimulator();
+			de.persosim.simulator.Activator persoSimActivator = de.persosim.simulator.Activator.getDefault();
+			PersoSim sim = persoSimActivator.getSim();
+			try {
+				sim.startSimulator();
 				sim.loadPersonalization(getDefaultPersonalization());
 			} catch (IOException e) {
 				e.printStackTrace();
 				MessageDialog.openError(null, "Error", "Failed to automatically load default personalization");
 				return;
 			}
-		    de.persosim.simulator.ui.Activator.disconnectFromNativeDriver();
-		    de.persosim.simulator.ui.Activator.connectToNativeDriver();
+			de.persosim.simulator.ui.Activator.disconnectFromNativeDriver();
+			de.persosim.simulator.ui.Activator.connectToNativeDriver();
 	}
 	
 	/**

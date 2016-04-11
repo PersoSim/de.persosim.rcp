@@ -25,6 +25,7 @@
     <module>../../org.globaltester.logging/org.globaltester.logging.fileLogger</module>
     <module>../../org.globaltester.parent/org.globaltester.parent</module>
     <module>../../org.globaltester.parent/org.globaltester.parent.test</module>
+    <module>../../org.globaltester.service/org.globaltester.service</module>
     <module>../../org.globaltester.simulator/org.globaltester.simulator</module>
   </modules>
 </project>

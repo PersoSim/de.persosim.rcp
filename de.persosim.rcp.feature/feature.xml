@@ -2,7 +2,7 @@
 <feature
       id="de.persosim.rcp.feature"
       label="PersoSim RCP"
-      version="0.8.3.qualifier"
+      version="0.9.0.qualifier"
       provider-name="HJP Consulting GmbH">
 
    <description url="http://www.example.com/description">

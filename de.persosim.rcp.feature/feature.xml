@@ -129,12 +129,6 @@
          unpack="false"/>
 
    <plugin
-         id="org.globaltester.base.doc"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"/>
-
-   <plugin
          id="org.eclipse.core.resources"
          download-size="0"
          install-size="0"
@@ -161,5 +155,17 @@
          install-size="0"
          version="0.0.0"
          unpack="false"/>
+
+   <plugin
+         id="org.globaltester.lib.bctls"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.globaltester.lib.json"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
 
 </feature>

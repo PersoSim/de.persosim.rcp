@@ -19,8 +19,6 @@
   <handlers xmi:id="_SQlcpzjUEeSelJkO-XchnA" elementId="de.persosim.rcp.handlers.aboutCommandHandler" contributionURI="bundleclass://de.persosim.rcp/de.persosim.rcp.handlers.AboutHandler" command="_SQlcpjjUEeSelJkO-XchnA"/>
   <bindingTables xmi:id="_SQlcnjjUEeSelJkO-XchnA" bindingContext="_SQlcmTjUEeSelJkO-XchnA">
     <bindings xmi:id="_SQlcnzjUEeSelJkO-XchnA" keySequence="M1+Q" command="_SQlcnDjUEeSelJkO-XchnA"/>
-    <bindings xmi:id="_SQlcojjUEeSelJkO-XchnA" keySequence="M1+O"/>
-    <bindings xmi:id="_SQlcpTjUEeSelJkO-XchnA" keySequence="M1+S"/>
     <bindings xmi:id="_SQlcqDjUEeSelJkO-XchnA" keySequence="M1+A" command="_SQlcpjjUEeSelJkO-XchnA"/>
   </bindingTables>
   <rootContext xmi:id="_SQlcmTjUEeSelJkO-XchnA" elementId="org.eclipse.ui.contexts.dialogAndWindow" name="In Dialog and Windows">

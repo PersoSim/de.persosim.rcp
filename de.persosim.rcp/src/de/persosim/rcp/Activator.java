@@ -46,8 +46,8 @@ public class Activator implements BundleActivator {
 				MessageDialog.openError(null, "Error", "Failed to automatically load default personalization");
 				return;
 			}
-			de.persosim.simulator.ui.Activator.disconnectFromNativeDriver();
-			de.persosim.simulator.ui.Activator.connectToNativeDriver();
+//			de.persosim.simulator.ui.Activator.disconnectFromNativeDriver();
+//			de.persosim.simulator.ui.Activator.connectToNativeDriver();
 	}
 	
 	/**

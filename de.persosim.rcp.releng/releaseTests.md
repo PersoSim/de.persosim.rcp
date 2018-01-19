@@ -25,5 +25,13 @@ Use an eID Client to change the the PIN, try this for both reader types
 	- [ ] Standard reader
 		- [ ] Check AutoLogin
 
+1. [ ] __Test platform independence__
+The basic functionality must be tested for all platforms (e.g. starting and some form of authentication)
+	- [ ] Linux
+	- [ ] Windows
+		- [ ] x86
+		- [ ] x64
+	- [ ] MacOS X
+
 <p style="page-break-after: always"/>
 

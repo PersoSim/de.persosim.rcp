@@ -5,7 +5,6 @@ import java.io.IOException;
 import java.net.URL;
 
 import org.eclipse.core.runtime.FileLocator;
-import org.eclipse.core.runtime.Platform;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleActivator;
@@ -46,8 +45,6 @@ public class Activator implements BundleActivator {
 				MessageDialog.openError(null, "Error", "Failed to automatically load default personalization");
 				return;
 			}
-//			de.persosim.simulator.ui.Activator.disconnectFromNativeDriver();
-//			de.persosim.simulator.ui.Activator.connectToNativeDriver();
 	}
 	
 	/**
@@ -56,7 +53,7 @@ public class Activator implements BundleActivator {
 	 * @throws IOException
 	 */
 	private Personalization getDefaultPersonalization() throws IOException {
-		Bundle plugin = Platform.getBundle(PersoSimPart.DE_PERSOSIM_SIMULATOR_BUNDLE);
+		Bundle plugin = de.persosim.simulator.Activator.getContext().getBundle();
 		URL url = plugin.getEntry (PersoSimPart.PERSO_PATH);
 		URL resolvedUrl;
 		

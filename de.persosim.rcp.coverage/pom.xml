@@ -35,6 +35,12 @@
     </dependency>
     <dependency>
       <groupId>de.persosim</groupId>
+      <artifactId>de.persosim.editor.ui</artifactId>
+      <version>0.10.3-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>de.persosim</groupId>
       <artifactId>de.persosim.rcp</artifactId>
       <version>0.10.3-SNAPSHOT</version>
       <scope>compile</scope>
@@ -42,6 +48,18 @@
     <dependency>
       <groupId>de.persosim</groupId>
       <artifactId>de.persosim.rcp.feature</artifactId>
+      <version>0.10.3-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>de.persosim</groupId>
+      <artifactId>de.persosim.remoteifd</artifactId>
+      <version>0.10.3-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>de.persosim</groupId>
+      <artifactId>de.persosim.remoteifd.ui</artifactId>
       <version>0.10.3-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
@@ -119,13 +137,19 @@
     </dependency>
     <dependency>
       <groupId>org.globaltester</groupId>
-      <artifactId>org.globaltester.logging</artifactId>
+      <artifactId>org.globaltester.lib.json</artifactId>
       <version>3.2.3-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.globaltester</groupId>
-      <artifactId>org.globaltester.logging.ui</artifactId>
+      <artifactId>org.globaltester.lib.bctls</artifactId>
+      <version>3.2.3-SNAPSHOT</version>
+      <scope>compile</scope>
+    </dependency>
+    <dependency>
+      <groupId>org.globaltester</groupId>
+      <artifactId>org.globaltester.logging</artifactId>
       <version>3.2.3-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>

@@ -10,6 +10,9 @@
     <module>../../de.persosim.driver.connector/de.persosim.driver.connector.test</module>
     <module>../../de.persosim.driver.connector/de.persosim.driver.connector.ui</module>
     <module>../../de.persosim.editor/de.persosim.editor.ui</module>
+    <module>../../de.persosim.editor/de.persosim.editor.rcp</module>
+    <module>../../de.persosim.editor/de.persosim.editor.rcp.feature</module>
+    <module>../../de.persosim.editor/de.persosim.editor.rcp.product</module>
     <module>../../de.persosim.rcp/de.persosim.rcp</module>
     <module>../../de.persosim.rcp/de.persosim.rcp.coverage</module>
     <module>../../de.persosim.rcp/de.persosim.rcp.feature</module>

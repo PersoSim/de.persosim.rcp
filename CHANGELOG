@@ -1,3 +1,11 @@
+Version 0.10.4 (15.05.2018)
+
+* Adapt to GT 3.2.4
+* Prevent multiple PACE SetAT commands from creating chaining errors
+* Use status word 6300 for PACE failure while using CAN
+* Code maintenance
+
+
 Version 0.10.3 (12.09.2017)
 
 * Adapt to GT 3.2.3

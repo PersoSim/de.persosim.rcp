@@ -1,6 +1,7 @@
-Version 0.10.4 (15.05.2018)
+Version 0.11.0 (14.05.2018)
 
-* Adapt to GT 3.2.4
+* Adapt to GT 3.3.0
+* Implement RemoteIFD fucntionality
 * Prevent multiple PACE SetAT commands from creating chaining errors
 * Use status word 6300 for PACE failure while using CAN
 * Code maintenance

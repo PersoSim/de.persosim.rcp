@@ -1,3 +1,11 @@
+Version 0.15.0 (24.06.2020)
+
+* Add UB-Profiles
+* Update other profiles
+* Move to current Java version
+* UI improvements
+* Adjust AuxObjects when datagroups are changed in editor
+
 Version 0.14.3 (09.06.2020)
 
 * Adapt to GT 3.6.3

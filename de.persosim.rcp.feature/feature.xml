@@ -2,7 +2,7 @@
 <feature
       id="de.persosim.rcp.feature"
       label="PersoSim RCP"
-      version="0.15.0.qualifier"
+      version="0.16.0.qualifier"
       provider-name="secunet Security Networks AG">
 
    <copyright>

@@ -1,7 +1,13 @@
+Version 0.16.1 (22.09.2020)
+
+* Adapt to GT 3.7.1
+
+
 Version 0.16.0 (15.09.2020)
 
 * Include idPicc in MrzAuthObject for static use
 * Adapt to GT 3.7.0
+
 
 Version 0.15.0 (24.06.2020)
 

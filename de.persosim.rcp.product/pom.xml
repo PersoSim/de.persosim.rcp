@@ -4,11 +4,11 @@
   <parent>
     <groupId>org.globaltester</groupId>
     <artifactId>org.globaltester.parent.product</artifactId>
-    <version>3.7.1-SNAPSHOT</version>
+    <version>3.7.2-SNAPSHOT</version>
     <relativePath>../../org.globaltester.parent/org.globaltester.parent.product/</relativePath>
   </parent>
   <groupId>de.persosim</groupId>
   <artifactId>de.persosim.rcp.product</artifactId>
   <packaging>eclipse-repository</packaging>
-  <version>0.16.1-SNAPSHOT</version>
+  <version>0.16.2-SNAPSHOT</version>
 </project>

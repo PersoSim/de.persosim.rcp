@@ -1,4 +1,4 @@
-Version 0.18.0 (24.02.2021)
+Version 0.17.2 (24.02.2021)
 
 * Implement RemoteIfdv2
 * Bugfix: allow multiple MSE SetAt w/ non-default Pin retry-counter

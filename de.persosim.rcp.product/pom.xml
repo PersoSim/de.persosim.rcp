@@ -10,5 +10,5 @@
   <groupId>de.persosim</groupId>
   <artifactId>de.persosim.rcp.product</artifactId>
   <packaging>eclipse-repository</packaging>
-  <version>0.17.3-SNAPSHOT</version>
+  <version>0.18.3-SNAPSHOT</version>
 </project>

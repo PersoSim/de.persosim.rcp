@@ -1,3 +1,8 @@
+Version 0.18.3 (18.11.2021)
+
+* Additional profiles for smart eID
+
+
 Version 0.17.3 (18.05.2021)
 
 * PersoSim responds with 6A82 instead of 6986 to READ BINARY on a non existing file

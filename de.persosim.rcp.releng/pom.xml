@@ -3,7 +3,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.persosim</groupId>
   <artifactId>de.persosim.rcp.releng</artifactId>
-  <version>0.18.3-SNAPSHOT</version>
+  <version>0.18.4-SNAPSHOT</version>
   <packaging>pom</packaging>
   <modules>
     <module>../../de.persosim.driver.connector/de.persosim.driver.connector</module>
@@ -13,12 +13,11 @@
     <module>../../de.persosim.editor/de.persosim.editor.rcp</module>
     <module>../../de.persosim.editor/de.persosim.editor.rcp.feature</module>
     <module>../../de.persosim.editor/de.persosim.editor.rcp.product</module>
-    <module>../../de.persosim.rcp/de.persosim.rcp</module>
-    <module>../../de.persosim.rcp/de.persosim.rcp.coverage</module>
-    <module>../../de.persosim.rcp/de.persosim.rcp.feature</module>
-    <module>../../de.persosim.rcp/de.persosim.rcp.product</module>
     <module>../../de.persosim.remoteifd/de.persosim.remoteifd</module>
     <module>../../de.persosim.remoteifd/de.persosim.remoteifd.ui</module>
+    <module>../../de.persosim.rcp/de.persosim.rcp</module>
+    <module>../../de.persosim.rcp/de.persosim.rcp.feature</module>
+    <module>../../de.persosim.rcp/de.persosim.rcp.product</module>
     <module>../../de.persosim.simulator/de.persosim.simulator</module>
     <module>../../de.persosim.simulator/de.persosim.simulator.adapter.socket</module>
     <module>../../de.persosim.simulator/de.persosim.simulator.test</module>
@@ -29,16 +28,16 @@
     <module>../../org.globaltester.cryptoprovider/org.globaltester.cryptoprovider</module>
     <module>../../org.globaltester.cryptoprovider/org.globaltester.cryptoprovider.bc</module>
     <module>../../org.globaltester.cryptoprovider/org.globaltester.cryptoprovider.sc</module>
-    <module>../../org.globaltester.lib.domparser/org.globaltester.lib.domparser</module>
-    <module>../../org.globaltester.lib.xstream/org.globaltester.lib.xstream</module>
-    <module>../../org.globaltester.lib.json/org.globaltester.lib.json</module>
-    <module>../../org.globaltester.lib.bctls/org.globaltester.lib.bctls</module>
     <module>../../org.globaltester.logging/org.globaltester.logging</module>
     <module>../../org.globaltester.logging/org.globaltester.logging.consoleLogger</module>
     <module>../../org.globaltester.logging/org.globaltester.logging.fileLogger</module>
     <module>../../org.globaltester.parent/org.globaltester.parent</module>
     <module>../../org.globaltester.parent/org.globaltester.parent.test</module>
-    <module>../../org.globaltester.service/org.globaltester.service</module>
     <module>../../org.globaltester.simulator/org.globaltester.simulator</module>
+    <module>../../org.globaltester.service/org.globaltester.service</module>
+    <module>../../org.globaltester.lib.domparser/org.globaltester.lib.domparser</module>
+    <module>../../org.globaltester.lib.xstream/org.globaltester.lib.xstream</module>
+    <module>../../org.globaltester.lib.json/org.globaltester.lib.json</module>
+    <module>../../org.globaltester.lib.bctls/org.globaltester.lib.bctls</module>
   </modules>
 </project>

@@ -5,7 +5,7 @@
   <parent>
     <groupId>org.globaltester</groupId>
     <artifactId>org.globaltester.parent.coverage</artifactId>
-    <version>3.8.3-SNAPSHOT</version>
+    <version>3.8.4-SNAPSHOT</version>
     <relativePath>../../org.globaltester.parent/org.globaltester.parent.coverage/</relativePath>
   </parent>
 
@@ -90,91 +90,91 @@
     <dependency>
       <groupId>org.globaltester</groupId>
       <artifactId>org.globaltester.base</artifactId>
-      <version>3.8.3-SNAPSHOT</version>
+      <version>3.8.4-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.globaltester</groupId>
       <artifactId>org.globaltester.base.doc</artifactId>
-      <version>3.8.3-SNAPSHOT</version>
+      <version>3.8.4-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.globaltester</groupId>
       <artifactId>org.globaltester.cryptoprovider</artifactId>
-      <version>3.8.3-SNAPSHOT</version>
+      <version>3.8.4-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.globaltester</groupId>
       <artifactId>org.globaltester.cryptoprovider.bc</artifactId>
-      <version>3.8.3-SNAPSHOT</version>
+      <version>3.8.4-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.globaltester</groupId>
       <artifactId>org.globaltester.cryptoprovider.sc</artifactId>
-      <version>3.8.3-SNAPSHOT</version>
+      <version>3.8.4-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.globaltester</groupId>
       <artifactId>org.globaltester.lib.domparser</artifactId>
-      <version>3.8.3-SNAPSHOT</version>
+      <version>3.8.4-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.globaltester</groupId>
       <artifactId>org.globaltester.lib.jmockit</artifactId>
-      <version>3.8.3-SNAPSHOT</version>
+      <version>3.8.4-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.globaltester</groupId>
       <artifactId>org.globaltester.lib.xstream</artifactId>
-      <version>3.8.3-SNAPSHOT</version>
+      <version>3.8.4-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.globaltester</groupId>
       <artifactId>org.globaltester.lib.json</artifactId>
-      <version>3.8.3-SNAPSHOT</version>
+      <version>3.8.4-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.globaltester</groupId>
       <artifactId>org.globaltester.lib.bctls</artifactId>
-      <version>3.8.3-SNAPSHOT</version>
+      <version>3.8.4-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.globaltester</groupId>
       <artifactId>org.globaltester.logging</artifactId>
-      <version>3.8.3-SNAPSHOT</version>
+      <version>3.8.4-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.globaltester</groupId>
       <artifactId>org.globaltester.logging.consoleLogger</artifactId>
-      <version>3.8.3-SNAPSHOT</version>
+      <version>3.8.4-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.globaltester</groupId>
       <artifactId>org.globaltester.logging.fileLogger</artifactId>
-      <version>3.8.3-SNAPSHOT</version>
+      <version>3.8.4-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.globaltester</groupId>
       <artifactId>org.globaltester.service</artifactId>
-      <version>3.8.3-SNAPSHOT</version>
+      <version>3.8.4-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
     <dependency>
       <groupId>org.globaltester</groupId>
       <artifactId>org.globaltester.simulator</artifactId>
-      <version>3.8.3-SNAPSHOT</version>
+      <version>3.8.4-SNAPSHOT</version>
       <scope>compile</scope>
     </dependency>
   </dependencies>

@@ -18,7 +18,6 @@
    <splash
       location="de.persosim.rcp" />
    <launcher name="PersoSim">
-      <solaris/>
       <win useIco="false">
          <bmp/>
       </win>
@@ -87,7 +86,6 @@
       <plugin id="org.eclipse.emf.ecore.xmi"/>
       <plugin id="org.eclipse.equinox.app"/>
       <plugin id="org.eclipse.equinox.common"/>
-      <plugin id="org.eclipse.equinox.concurrent"/>
       <plugin id="org.eclipse.equinox.ds"/>
       <plugin id="org.eclipse.equinox.event"/>
       <plugin id="org.eclipse.equinox.p2.reconciler.dropins"/>

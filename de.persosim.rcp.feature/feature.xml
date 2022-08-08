@@ -161,4 +161,10 @@
          install-size="0"
          version="0.0.0"/>
 
+   <plugin
+         id="org.globaltester.lib.jaxws"
+         download-size="0"
+         install-size="0"
+         version="0.0.0"/>
+
 </feature>

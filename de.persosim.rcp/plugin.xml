@@ -5,11 +5,11 @@
          id="product"
          point="org.eclipse.core.runtime.products">
       <product
-            name="POSeIDAS RCP"
+            name="PersoSim RCP"
             application="org.eclipse.e4.ui.workbench.swt.E4Application">
          <property
                name="appName"
-               value="POSeIDAS RCP">
+               value="PersoSim RCP">
          </property>
          <property
                name="lifeCycleURI"

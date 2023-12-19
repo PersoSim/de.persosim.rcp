@@ -15,12 +15,8 @@ public class LifeCycle {
 	}
 
 	class EventLoopAdvisor implements IEventLoopAdvisor {
-		private final IEclipseContext _appContext;
-
 		EventLoopAdvisor(IEclipseContext appContext) {
 			super();
-
-			_appContext = appContext;
 		}
 
 		@Override

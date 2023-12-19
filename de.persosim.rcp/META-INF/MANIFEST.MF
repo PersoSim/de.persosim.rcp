@@ -22,3 +22,4 @@ Bundle-Vendor: secunet Security Networks AG
 Bundle-ActivationPolicy: lazy
 Bundle-Activator: de.persosim.rcp.Activator
 Import-Package: de.persosim.driver.connector
+Automatic-Module-Name: de.persosim.rcp

@@ -41,4 +41,84 @@
     <module>../../org.globaltester.lib.jaxws/org.globaltester.lib.jaxws</module>
     <module>../../org.globaltester.parent/org.globaltester.parent.target</module>
   </modules>
+
+  <profiles>
+		<!-- OWASP Dependency-Checker: checking for vulnerabilities of the dependencies (CVE) -->
+		<profile>
+			<id>dependency-check</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.owasp</groupId>
+						<artifactId>dependency-check-maven</artifactId>
+						<version>9.0.9</version>
+						<configuration>
+							<!-- disable all NVD CVE/CPE, retireJS updates; use this only temporarily! -->
+							<!-- <autoUpdate>false</autoUpdate> -->
+							<nvdValidForHours>672</nvdValidForHours>
+							<failBuildOnCVSS>11</failBuildOnCVSS>
+							<formats>xml,html</formats>
+							<failOnError>false</failOnError>
+							<assemblyAnalyzerEnabled>false</assemblyAnalyzerEnabled>
+							<!-- <suppressionFile>owasp-suppressions.xml</suppressionFile> -->
+							<outputDirectory>./target/</outputDirectory>
+							<!-- "The name of the report in the site." <name> does not work for file name in outputDirectory! -->
+							<!-- Name in outputDirectory is always 'dependency-check-report.html|.xml' -->
+							<name>persosim-dependency-check-report.html</name>
+							<!-- obtained from https://nvd.nist.gov/developers/request-an-api-key -->
+							<!-- for stefan.philipp@secunet.com -->
+							<nvdApiKey>2da4ba16-70a6-4881-a14c-27113956c289</nvdApiKey>
+						</configuration>
+						<executions>
+							<execution>
+								<goals>
+									<goal>aggregate</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+
+  		<!-- Generate CycloneDX Software Bill of Materials (SBOM). -->
+		<!-- https://github.com/CycloneDX/cyclonedx-maven-plugin -->
+		<!-- mvn org.cyclonedx:cyclonedx-maven-plugin -->
+		<profile>
+			<id>cyclonedx-sbom</id>
+			<activation>
+				<activeByDefault>false</activeByDefault>
+			</activation>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.cyclonedx</groupId>
+						<artifactId>cyclonedx-maven-plugin</artifactId>
+						<version>2.7.11</version>
+						<configuration>
+							<includeCompileScope>true</includeCompileScope>
+							<includeProvidedScope>true</includeProvidedScope>
+							<includeRuntimeScope>true</includeRuntimeScope>
+							<includeSystemScope>true</includeSystemScope>
+							<includeTestScope>false</includeTestScope>
+							<outputName>persosim-bom</outputName>
+							<outputDirectory>./target/</outputDirectory>
+							<verbose>true</verbose>
+						</configuration>
+						<executions>
+							<execution>
+								<goals>
+									<goal>makeAggregateBom</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+	</profiles>
+
 </project>

@@ -94,10 +94,6 @@
          version="0.0.0"/>
 
    <plugin
-         id="org.globaltester.lib.json"
-         version="0.0.0"/>
-
-   <plugin
          id="org.globaltester.lib.jaxws"
          version="0.0.0"/>
 

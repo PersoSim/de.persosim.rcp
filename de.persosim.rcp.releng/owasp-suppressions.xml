@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suppressions
+	xmlns="https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.3.xsd">
+	<suppress>
+		<!-- see https://github.com/jeremylong/DependencyCheck/issues/6666 -->
+		<notes><![CDATA[file name: jetty-servlet-api-4.0.6.jar]]></notes>
+		<packageUrl regex="true">
+			^pkg:maven/org\.eclipse\.jetty\.toolchain/jetty\-servlet\-api@.*$</packageUrl>
+		<cpe>cpe:/a:eclipse:jetty</cpe>
+	</suppress>
+	<suppress>
+		<!-- see https://github.com/jeremylong/DependencyCheck/issues/5844 -->
+		<notes><![CDATA[file name: commons-jxpath-1.3.jar]]></notes>
+		<packageUrl regex="true">^pkg:maven/commons\-jxpath/commons\-jxpath@.*$</packageUrl>
+		<cpe>cpe:/a:apache:commons_jxpath</cpe>
+	</suppress>
+	<suppress>
+		<!-- see https://github.com/jeremylong/DependencyCheck/issues/5844 -->
+		<notes><![CDATA[file name: commons-jxpath-1.3.jar]]></notes>
+		<packageUrl regex="true">^pkg:maven/commons\-jxpath/commons\-jxpath@.*$</packageUrl>
+		<vulnerabilityName>CVE-2022-41852</vulnerabilityName>
+	</suppress>
+</suppressions>

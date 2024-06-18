@@ -62,7 +62,7 @@
 							<formats>xml,html</formats>
 							<failOnError>false</failOnError>
 							<assemblyAnalyzerEnabled>false</assemblyAnalyzerEnabled>
-							<!-- <suppressionFile>owasp-suppressions.xml</suppressionFile> -->
+							<suppressionFile>owasp-suppressions.xml</suppressionFile>
 							<outputDirectory>./target/</outputDirectory>
 							<!-- "The name of the report in the site." <name> does not work for file name in outputDirectory! -->
 							<!-- Name in outputDirectory is always 'dependency-check-report.html|.xml' -->

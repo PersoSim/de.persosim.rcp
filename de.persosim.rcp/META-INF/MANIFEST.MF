@@ -16,7 +16,7 @@ Require-Bundle: org.eclipse.core.runtime,
  de.persosim.simulator,
  de.persosim.simulator.ui,
  org.globaltester.logging,
- javax.inject
+ jakarta.inject.jakarta.inject-api
 Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-Vendor: secunet Security Networks AG
 Bundle-ActivationPolicy: lazy

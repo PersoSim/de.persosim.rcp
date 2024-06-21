@@ -1,3 +1,15 @@
+Version 1.0.0 (21.06.2024)
+
+* Adapt to GT 3.10.0
+* No support for Java 8 any longer
+* Support for Java 17 / 21
+* Updated profiles
+* Option to change DS algorithm in signature settings (Default: SHA384withECDSA)
+* Improved logging: added some environmental information; less exceptions
+* Initial start profile: Show "Profile 1" instead of "Default Profile"
+* Update used libraries (e.g. Bouncy Castle 1.77; Eclipse Target Platform 4.31)
+
+
 Version 0.19.0 (10.08.2023)
 
 * Adapt to GT 3.9.0

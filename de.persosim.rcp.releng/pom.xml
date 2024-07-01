@@ -35,7 +35,6 @@
     <module>../../org.globaltester.parent/org.globaltester.parent.test</module>
     <module>../../org.globaltester.simulator/org.globaltester.simulator</module>
     <module>../../org.globaltester.service/org.globaltester.service</module>
-    <module>../../org.globaltester.lib.domparser/org.globaltester.lib.domparser</module>
     <module>../../org.globaltester.lib.xstream/org.globaltester.lib.xstream</module>
     <module>../../org.globaltester.lib.jaxws/org.globaltester.lib.jaxws</module>
     <module>../../org.globaltester.parent/org.globaltester.parent.target</module>

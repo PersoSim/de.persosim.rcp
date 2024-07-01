@@ -13,21 +13,24 @@ import org.osgi.framework.BundleContext;
 import de.persosim.simulator.PersoSim;
 import de.persosim.simulator.perso.Personalization;
 import de.persosim.simulator.perso.PersonalizationFactory;
+import de.persosim.simulator.preferences.EclipsePreferenceAccessor;
+import de.persosim.simulator.preferences.PersoSimPreferenceManager;
 import de.persosim.simulator.ui.parts.PersoSimPart;
 
 public class Activator implements BundleActivator {
 
 	@Override
 	public void start(BundleContext context) throws Exception {
+		PersoSimPreferenceManager.setPreferenceAccessorIfNotAvailable(new EclipsePreferenceAccessor());
 		de.persosim.simulator.Activator.getDefault().enableService();
 		startSimAndConnectToNativeDriver();
 	}
-	
+
 	@Override
 	public void stop(BundleContext context) throws Exception {
 		de.persosim.simulator.Activator.getDefault().disableService();
 	}
-	
+
 	/**
 	 * This method handles the connection to the simulator. Its primary task is
 	 * to ensure the simulator is up and running when a connection is
@@ -46,7 +49,7 @@ public class Activator implements BundleActivator {
 				return;
 			}
 	}
-	
+
 	/**
 	 * This method returns a personalization which can be used as default.
 	 * @return a default personalization
@@ -56,16 +59,16 @@ public class Activator implements BundleActivator {
 		Bundle plugin = de.persosim.simulator.Activator.getContext().getBundle();
 		URL url = plugin.getEntry (PersoSimPart.PERSO_PATH);
 		URL resolvedUrl;
-		
+
 		resolvedUrl = FileLocator.resolve(url);
-		
+
 		File folder = new File(resolvedUrl.getFile());
 		String pathString = folder.getAbsolutePath() + File.separator + PersoSimPart.PERSO_FILE;
-		
+
 		System.out.println("Loading default personalization from: " + pathString);
-		
+
 		Personalization personalization = (Personalization) PersonalizationFactory.unmarshal(pathString);
-		
+
 		return personalization;
 	}
 

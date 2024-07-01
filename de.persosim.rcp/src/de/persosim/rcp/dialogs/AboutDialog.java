@@ -4,7 +4,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.net.URL;
 
-import javax.inject.Inject;
+import jakarta.inject.Inject;
 
 import org.eclipse.core.runtime.IProduct;
 import org.eclipse.core.runtime.Platform;
@@ -54,6 +54,7 @@ public class AboutDialog extends Dialog {
 		    
 		    ImageData imgData = image.getImageData();
 			imgData = imgData.scaledTo(40, 40);
+			image.dispose();
 			image = new Image(Display.getDefault(), imgData);
 		} catch (IOException e) {
 		    e.printStackTrace();
@@ -94,7 +95,9 @@ public class AboutDialog extends Dialog {
 
 		Label label2 = new Label(upper, SWT.NONE);
 		label2.setText("PersoSim");
-		label2.setFont(new Font(upper.getDisplay(), FONT_NAME, 24, SWT.BOLD));
+		Font font = new Font(upper.getDisplay(), FONT_NAME, 24, SWT.BOLD);
+		label2.setFont(font);
+		label2.addListener(SWT.Dispose, event -> font.dispose());
 
 		FormData formData2 = new FormData();
 		formData2.left = new FormAttachment(label1, 10);
@@ -103,8 +106,10 @@ public class AboutDialog extends Dialog {
 
 		Label label3 = new Label(upper, SWT.NONE);
 		label3.setText(getProductVersion());
-		label3.setFont(new Font(upper.getDisplay(), FONT_NAME, 12, SWT.NONE));
-
+		Font font2 =new Font(upper.getDisplay(), FONT_NAME, 12, SWT.NONE);
+		label3.setFont(font2);
+		label3.addListener(SWT.Dispose, event -> font2.dispose());
+		
 		FormData formData3 = new FormData();
 		formData3.left = new FormAttachment(label2, 5);
 		formData3.bottom = new FormAttachment(label1, -5, SWT.BOTTOM);

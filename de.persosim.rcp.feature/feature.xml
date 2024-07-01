@@ -2,7 +2,7 @@
 <feature
       id="de.persosim.rcp.feature"
       label="PersoSim RCP"
-      version="0.19.0.qualifier"
+      version="1.0.0.qualifier"
       provider-name="secunet Security Networks AG">
 
    <copyright>
@@ -14,151 +14,119 @@
    </copyright>
 
    <requires>
-      <import feature="org.eclipse.e4.rcp" version="1.4.0.v20150603-0857"/>
+      <import feature="org.eclipse.e4.rcp" version="4.30.0.v20231113-1355"/>
    </requires>
 
    <plugin
          id="de.persosim.rcp"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
+         version="0.0.0"/>
 
    <plugin
          id="de.persosim.simulator"
-         download-size="0"
-         install-size="0"
          version="0.0.0"/>
 
    <plugin
          id="de.persosim.simulator.adapter.socket"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="de.persosim.simulator.ui"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="de.persosim.driver.connector"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="de.persosim.driver.connector.ui"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.globaltester.cryptoprovider"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.globaltester.cryptoprovider.bc"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.globaltester.logging"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.globaltester.logging.consoleLogger"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.globaltester.simulator"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.globaltester.service"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.globaltester.lib.xstream"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.globaltester.base"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.globaltester.lib.domparser"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.core.resources"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.eclipse.core.filesystem"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="de.persosim.remoteifd"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="de.persosim.remoteifd.ui"
-         download-size="0"
-         install-size="0"
-         version="0.0.0"
-         unpack="false"/>
-
-   <plugin
-         id="org.globaltester.lib.bctls"
-         download-size="0"
-         install-size="0"
          version="0.0.0"/>
 
    <plugin
-         id="org.globaltester.lib.json"
-         download-size="0"
-         install-size="0"
+         id="de.persosim.simulator.ui"
+         version="0.0.0"/>
+
+   <plugin
+         id="de.persosim.driver.connector"
+         version="0.0.0"/>
+
+   <plugin
+         id="de.persosim.driver.connector.ui"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.globaltester.cryptoprovider"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.globaltester.cryptoprovider.bc"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.globaltester.logging"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.globaltester.logging.consoleLogger"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.globaltester.simulator"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.globaltester.service"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.globaltester.lib.xstream"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.globaltester.base"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.globaltester.lib.domparser"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.core.resources"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.core.filesystem"
+         version="0.0.0"/>
+
+   <plugin
+         id="de.persosim.remoteifd"
+         version="0.0.0"/>
+
+   <plugin
+         id="de.persosim.remoteifd.ui"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.globaltester.lib.jaxws"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.platform"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.ui.intro"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.ui"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.help"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.ui.forms"
+         version="0.0.0"/>
+
+   <plugin
+         id="org.eclipse.ui.workbench"
+         version="0.0.0"/>
+
+   <plugin
+         id="jakarta.inject.jakarta.inject-api"
+         version="0.0.0"/>
+
+   <plugin
+         id="jakarta.annotation-api"
          version="0.0.0"/>
 
 </feature>

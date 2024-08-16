@@ -1,5 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project>
+  <parent>
+    <groupId>org.globaltester</groupId>
+    <artifactId>org.globaltester.parent</artifactId>
+    <version>3.10.0-SNAPSHOT</version>
+    <relativePath>../../org.globaltester.parent/org.globaltester.parent/</relativePath>
+  </parent>
   <modelVersion>4.0.0</modelVersion>
   <groupId>de.persosim</groupId>
   <artifactId>de.persosim.rcp.releng</artifactId>
@@ -35,7 +41,6 @@
     <module>../../org.globaltester.parent/org.globaltester.parent.test</module>
     <module>../../org.globaltester.simulator/org.globaltester.simulator</module>
     <module>../../org.globaltester.service/org.globaltester.service</module>
-    <module>../../org.globaltester.lib.domparser/org.globaltester.lib.domparser</module>
     <module>../../org.globaltester.lib.xstream/org.globaltester.lib.xstream</module>
     <module>../../org.globaltester.lib.jaxws/org.globaltester.lib.jaxws</module>
     <module>../../org.globaltester.parent/org.globaltester.parent.target</module>
@@ -53,7 +58,7 @@
 					<plugin>
 						<groupId>org.owasp</groupId>
 						<artifactId>dependency-check-maven</artifactId>
-						<version>1.0.0-SNAPSHOT</version>
+						<version>${dependency-check-maven.version}</version>
 						<configuration>
 							<!-- disable all NVD CVE/CPE, retireJS updates; use this only temporarily! -->
 							<!-- <autoUpdate>false</autoUpdate> -->
@@ -96,7 +101,7 @@
 					<plugin>
 						<groupId>org.cyclonedx</groupId>
 						<artifactId>cyclonedx-maven-plugin</artifactId>
-						<version>2.7.11</version>
+						<version>${cyclonedx-maven-plugin.version}</version>
 						<configuration>
 							<includeCompileScope>true</includeCompileScope>
 							<includeProvidedScope>true</includeProvidedScope>
@@ -106,7 +111,15 @@
 							<outputName>persosim-bom</outputName>
 							<outputDirectory>./target/</outputDirectory>
 							<verbose>true</verbose>
+							<excludeArtifactId>org.globaltester.parent.target</excludeArtifactId>
 						</configuration>
+    					<dependencies>
+        					<dependency>
+            					<groupId>org.eclipse.tycho</groupId>
+            					<artifactId>tycho-sbom</artifactId>
+            					<version>${tycho.version}</version>
+        					</dependency>
+    					</dependencies>
 						<executions>
 							<execution>
 								<goals>
@@ -118,6 +131,7 @@
 				</plugins>
 			</build>
 		</profile>
+		
 	</profiles>
 
 </project>

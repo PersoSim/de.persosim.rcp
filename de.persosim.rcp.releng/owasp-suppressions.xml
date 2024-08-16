@@ -1,23 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <suppressions
 	xmlns="https://jeremylong.github.io/DependencyCheck/dependency-suppression.1.3.xsd">
-	<suppress>
+	
+	<suppress until="2025-01-01Z">
 		<!-- see https://github.com/jeremylong/DependencyCheck/issues/6666 -->
 		<notes><![CDATA[file name: jetty-servlet-api-4.0.6.jar]]></notes>
 		<packageUrl regex="true">
 			^pkg:maven/org\.eclipse\.jetty\.toolchain/jetty\-servlet\-api@.*$</packageUrl>
 		<cpe>cpe:/a:eclipse:jetty</cpe>
 	</suppress>
-	<suppress>
+	
+	<suppress until="2025-01-01Z">
 		<!-- see https://github.com/jeremylong/DependencyCheck/issues/5844 -->
 		<notes><![CDATA[file name: commons-jxpath-1.3.jar]]></notes>
 		<packageUrl regex="true">^pkg:maven/commons\-jxpath/commons\-jxpath@.*$</packageUrl>
 		<cpe>cpe:/a:apache:commons_jxpath</cpe>
 	</suppress>
-	<suppress>
+	<suppress until="2025-01-01Z">
 		<!-- see https://github.com/jeremylong/DependencyCheck/issues/5844 -->
 		<notes><![CDATA[file name: commons-jxpath-1.3.jar]]></notes>
 		<packageUrl regex="true">^pkg:maven/commons\-jxpath/commons\-jxpath@.*$</packageUrl>
 		<vulnerabilityName>CVE-2022-41852</vulnerabilityName>
 	</suppress>
+
+	<suppress until="2025-01-01Z">
+		<!-- see https://nvd.nist.gov/vuln/detail/CVE-2022-42920 -->
+		<!-- xalan-2.7.3.jar contains Apache Commons BCEL 6.7.0 -->
+		<notes><![CDATA[file name: xalan-2.7.3.jar]]></notes>
+		<packageUrl regex="true">
+			^pkg:maven/org\.globaltester/org\.globaltester\.lib\.apache\.xml@.*$</packageUrl>
+		<cpe>cpe:/a:apache:commons_bcel</cpe>
+	</suppress>
+	<suppress until="2025-01-01Z">
+		<!-- see https://nvd.nist.gov/vuln/detail/CVE-2022-42920 -->
+		<!-- xalan-2.7.3.jar contains Apache Commons BCEL 6.7.0 -->
+		<notes><![CDATA[file name: xalan-2.7.3.jar]]></notes>
+		<packageUrl regex="true">
+			^pkg:maven/org\.globaltester/org\.globaltester\.lib\.apache\.xml@.*$</packageUrl>
+		<cpe>cpe:/a:apache:xalan-java</cpe>
+	</suppress>
+
 </suppressions>

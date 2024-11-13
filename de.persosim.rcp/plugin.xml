@@ -15,6 +15,26 @@
                name="lifeCycleURI"
                value="bundleclass://de.persosim.rcp/de.persosim.rcp.LifeCycle">
          </property>
+         <property
+               name="windowImages"
+               value="icons/persosim16.png,icons/persosim32.png,icons/persosim48.png,icons/persosim64.png,icons/persosim128.png,icons/persosim256.png">
+         </property>
+         <property
+               name="startupForegroundColor"
+               value="000000">
+         </property>
+         <property
+               name="startupMessageRect"
+               value="5,260,435,20">
+         </property>
+         <property
+               name="startupProgressRect"
+               value="0,280,455,15">
+         </property>
+         <property
+               name="preferenceCustomization"
+               value="plugin_customization.ini">
+         </property>
       </product>
    </extension>
 

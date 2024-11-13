@@ -3,6 +3,7 @@
 
 <product name="PersoSim RCP" uid="de.persosim.rcp.product" id="de.persosim.rcp.product" application="org.eclipse.e4.ui.workbench.swt.E4Application" version="1.0.1.qualifier" type="features" includeLaunchers="true" autoIncludeRequirements="true">
 
+
    <configIni use="default">
    </configIni>
 
@@ -15,15 +16,28 @@
       </vmArgsMac>
    </launcherArgs>
 
-   <windowImages/>
+   <windowImages i16="/de.persosim.rcp/icons/persosim16.png" i32="/de.persosim.rcp/icons/persosim32.png" i48="/de.persosim.rcp/icons/persosim48.png" i64="/de.persosim.rcp/icons/persosim64.png" i128="/de.persosim.rcp/icons/persosim128.png" i256="/de.persosim.rcp/icons/persosim256.png"/>
 
    <splash
-      location="de.persosim.rcp" />
+      location="de.persosim.rcp"
+      startupProgressRect="0,280,455,15"
+      startupMessageRect="5,260,435,20"
+      startupForegroundColor="000000" />
    <launcher name="PersoSim">
+      <linux icon="../de.persosim.rcp/icons/persosim48.xpm"/>
+      <macosx icon="../de.persosim.rcp/icons/persosim48.icns"/>
       <win useIco="false">
-         <bmp/>
+         <bmp
+            winSmallHigh="../de.persosim.rcp/icons/persosim16.bmp"
+            winSmallLow="../de.persosim.rcp/icons/persosim16_8.bmp"
+            winMediumHigh="../de.persosim.rcp/icons/persosim32.bmp"
+            winMediumLow="../de.persosim.rcp/icons/persosim32_8.bmp"
+            winLargeHigh="../de.persosim.rcp/icons/persosim48.bmp"
+            winLargeLow="../de.persosim.rcp/icons/persosim48_8.bmp"
+            winExtraLargeHigh="../de.persosim.rcp/icons/persosim256.bmp"/>
       </win>
    </launcher>
+
 
    <vm>
    </vm>
@@ -103,8 +117,8 @@
       <plugin id="org.eclipse.osgi.compatibility.state"/>
       <plugin id="org.eclipse.osgi.services"/>
       <plugin id="org.eclipse.swt"/>
-      <plugin id="org.eclipse.swt.cocoa.macosx.x86_64"/>
       <plugin id="org.eclipse.swt.cocoa.macosx.aarch64"/>
+      <plugin id="org.eclipse.swt.cocoa.macosx.x86_64"/>
       <plugin id="org.eclipse.swt.gtk.linux.x86_64"/>
       <plugin id="org.eclipse.swt.win32.win32.x86_64"/>
       <plugin id="org.eclipse.ui.workbench"/>
@@ -138,5 +152,12 @@
       <plugin id="org.globaltester.cryptoprovider" autoStart="true" startLevel="1" />
       <plugin id="org.globaltester.cryptoprovider.bc" autoStart="true" startLevel="1" />
    </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
 
 </product>

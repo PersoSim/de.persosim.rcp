@@ -59,7 +59,7 @@ public class Activator implements BundleActivator
 
 	/**
 	 * This method returns a personalization which can be used as default.
-	 * 
+	 *
 	 * @return a default personalization
 	 * @throws IOException
 	 *             in error case
@@ -73,7 +73,6 @@ public class Activator implements BundleActivator
 		String pathString = folder.getAbsolutePath();
 
 		ProfileHelper.setRootPathPersoFiles(Path.of(pathString));
-		ProfileHelper.getPreferenceStoreAccessorInstance();
 
 		ProfileHelper.createAllMissingOverlayProfileFiles(ProfileHelper.getRootPathPersoFiles());
 

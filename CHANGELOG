@@ -1,3 +1,12 @@
+Version 1.1.0 (12.12.2024)
+
+* Adapt to GT 3.10.2
+* Editor/Simulator: Profile overlays for RI keys added (generation of individual instance-specific RI keys at the first launch)
+* Editor: JSON profile export added
+* Editor: CAN + PUK editable
+* Editor: Profile 11 added
+
+
 Version 1.0.1 (11.09.2024)
 
 * Adapt to GT 3.10.1

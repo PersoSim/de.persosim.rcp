@@ -1,3 +1,9 @@
+Version 1.1.1 (09.04.2025)
+
+* Adapt to GT 4.0.0
+* BouncyCastle library version switched to 2.73.7 LTS
+
+
 Version 1.1.0 (12.12.2024)
 
 * Adapt to GT 3.10.2
@@ -5,6 +11,7 @@ Version 1.1.0 (12.12.2024)
 * Editor: JSON profile export added
 * Editor: CAN + PUK editable
 * Editor: Profile 11 added
+* Eclipse platform upgrade to 4.31
 
 
 Version 1.0.1 (11.09.2024)

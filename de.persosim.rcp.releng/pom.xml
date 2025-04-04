@@ -26,6 +26,8 @@
     <module>../../de.persosim.rcp/de.persosim.rcp.product</module>
     <module>../../de.persosim.simulator/de.persosim.simulator</module>
     <module>../../de.persosim.simulator/de.persosim.simulator.adapter.socket</module>
+    <module>../../de.persosim.simulator/de.persosim.simulator.adapter.socket.test</module>
+    <module>../../de.persosim.simulator/de.persosim.simulator.adapter.socket.ui</module>
     <module>../../de.persosim.simulator/de.persosim.simulator.test</module>
     <module>../../de.persosim.simulator/de.persosim.simulator.ui</module>
     <module>../../org.globaltester.base/org.globaltester.base</module>

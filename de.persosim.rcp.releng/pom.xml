@@ -19,6 +19,7 @@
     <module>../../de.persosim.editor/de.persosim.editor.rcp</module>
     <module>../../de.persosim.editor/de.persosim.editor.rcp.feature</module>
     <module>../../de.persosim.editor/de.persosim.editor.rcp.product</module>
+    <module>../../de.persosim.lib.qrcodegen/de.persosim.lib.qrcodegen</module>
     <module>../../de.persosim.remoteifd/de.persosim.remoteifd</module>
     <module>../../de.persosim.remoteifd/de.persosim.remoteifd.ui</module>
     <module>../../de.persosim.rcp/de.persosim.rcp</module>

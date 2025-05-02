@@ -1,3 +1,8 @@
+Version 1.1.2 (02.05.2025)
+
+* Allow using VSmartcard Android app as hardware simulation device
+
+
 Version 1.1.1 (09.04.2025)
 
 * Adapt to GT 4.0.0

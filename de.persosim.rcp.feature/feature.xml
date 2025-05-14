@@ -125,4 +125,8 @@
          id="jakarta.annotation-api"
          version="0.0.0"/>
 
+   <plugin
+         id="de.persosim.simulator.adapter.socket.ui"
+         version="0.0.0"/>
+
 </feature>

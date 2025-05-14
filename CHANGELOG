@@ -1,3 +1,8 @@
+Version 1.1.2 (00.00.0000)
+
+* Implements interface to Frank Morgner's VSmartcard Android app
+
+
 Version 1.1.1 (08.05.2025)
 
 * Adapt to GT 4.0.0

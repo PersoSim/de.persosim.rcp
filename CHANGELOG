@@ -1,4 +1,4 @@
-Version 1.2.0 (20.06.2025)
+Version 1.2.0 (18.06.2025)
 
 * Allow using Frank Morgner's VSmartcard Android app as hardware simulation device
 * Add CAv3,ENVELOPE and COMPARE protocols

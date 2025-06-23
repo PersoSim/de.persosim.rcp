@@ -79,7 +79,7 @@ public class Activator implements BundleActivator
 		pathString = pathString + File.separator + PersoSimPart.PERSO_FILE;
 		System.out.println("Loading default personalization from '" + pathString + "'.");
 
-		return CommandParser.getPerso(pathString);
+		return CommandParser.getPerso(pathString, true);
 	}
 
 }

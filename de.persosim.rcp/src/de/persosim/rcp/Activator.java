@@ -17,10 +17,10 @@ import de.persosim.simulator.perso.Personalization;
 import de.persosim.simulator.perso.export.ProfileHelper;
 import de.persosim.simulator.preferences.EclipsePreferenceAccessor;
 import de.persosim.simulator.preferences.PersoSimPreferenceManager;
-import de.persosim.simulator.ui.parts.PersoSimPart;
 
 public class Activator implements BundleActivator
 {
+	public static final String DEFAULT_PERSO_FILE = "Profile01.perso";
 
 	@Override
 	public void start(BundleContext context) throws Exception
@@ -47,13 +47,12 @@ public class Activator implements BundleActivator
 		de.persosim.simulator.Activator persoSimActivator = de.persosim.simulator.Activator.getDefault();
 		PersoSim sim = persoSimActivator.getSim();
 		try {
-			sim.startSimulator();
 			sim.loadPersonalization(getDefaultPersonalization());
+			sim.logStartOK();
 		}
 		catch (IOException e) {
 			e.printStackTrace();
 			MessageDialog.openError(null, "Error", "Failed to automatically load default personalization");
-			return;
 		}
 	}
 
@@ -76,7 +75,7 @@ public class Activator implements BundleActivator
 
 		ProfileHelper.createAllMissingOverlayProfileFiles(ProfileHelper.getRootPathPersoFiles());
 
-		pathString = pathString + File.separator + PersoSimPart.PERSO_FILE;
+		pathString = pathString + File.separator + DEFAULT_PERSO_FILE;
 		System.out.println("Loading default personalization from '" + pathString + "'.");
 
 		return CommandParser.getPerso(pathString, true);

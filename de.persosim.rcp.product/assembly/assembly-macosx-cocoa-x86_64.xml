@@ -1,0 +1,30 @@
+<assembly>
+    <id>macosx.cocoa.x86_64</id>
+    <formats>
+        <format>tar.gz</format>
+    </formats>
+	<fileSets>
+		<fileSet>
+			<directory>target/products/${project.artifactId}/macosx/cocoa/x86_64/PersoSim.app</directory>
+			<outputDirectory>PersoSim.app</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<directory>target/products/de.persosim.simulator.controller.product/macosx/cocoa/x86_64/PersoSimController.app/Contents/Eclipse/plugins</directory>
+			<outputDirectory>PersoSim.app/Contents/Eclipse/plugins</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<includes>
+				<include>PersoSimController</include>
+			</includes>
+			<directory>target/products/de.persosim.simulator.controller.product/macosx/cocoa/x86_64/PersoSimController.app/Contents/MacOS</directory>
+			<outputDirectory>PersoSim.app/Contents/MacOS</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<includes>
+				<include>PersoSimController.ini</include>
+			</includes>
+			<directory>target/products/de.persosim.simulator.controller.product/macosx/cocoa/x86_64/PersoSimController.app/Contents/Eclipse</directory>
+			<outputDirectory>PersoSim.app/Contents/Eclipse</outputDirectory>
+		</fileSet>
+	</fileSets>
+</assembly>

@@ -1,0 +1,27 @@
+<assembly>
+    <id>linux.gtk.x86_64</id>
+    <formats>
+        <format>tar.gz</format>
+    </formats>
+	<fileSets>
+		<fileSet>
+			<excludes>
+				<exclude>PersoSimc*</exclude>
+			</excludes>
+			<directory>target/products/${project.artifactId}/linux/gtk/x86_64</directory>
+			<outputDirectory />
+		</fileSet>
+		<fileSet>
+			<directory>target/products/de.persosim.simulator.controller.product/linux/gtk/x86_64/plugins</directory>
+			<outputDirectory>plugins</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<includes>
+				<include>PersoSimControllerc*</include>
+				<include>PersoSimController.ini</include>
+			</includes>
+			<directory>target/products/de.persosim.simulator.controller.product/linux/gtk/x86_64</directory>
+			<outputDirectory />
+		</fileSet>
+	</fileSets>
+</assembly>

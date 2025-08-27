@@ -29,11 +29,14 @@
     <module>../../de.persosim.simulator/de.persosim.simulator.adapter.socket</module>
     <module>../../de.persosim.simulator/de.persosim.simulator.adapter.socket.test</module>
     <module>../../de.persosim.simulator/de.persosim.simulator.adapter.socket.ui</module>
+    <module>../../de.persosim.simulator/de.persosim.simulator.controller</module>
     <module>../../de.persosim.simulator/de.persosim.simulator.test</module>
     <module>../../de.persosim.simulator/de.persosim.simulator.ui</module>
     <module>../../org.globaltester.base/org.globaltester.base</module>
     <module>../../org.globaltester.base/org.globaltester.base.doc</module>
     <module>../../org.globaltester.base/org.globaltester.base.test</module>
+    <module>../../org.globaltester.control/org.globaltester.control</module>
+    <module>../../org.globaltester.control.soap/org.globaltester.control.soap</module>
     <module>../../org.globaltester.cryptoprovider/org.globaltester.cryptoprovider</module>
     <module>../../org.globaltester.cryptoprovider/org.globaltester.cryptoprovider.bc</module>
     <module>../../org.globaltester.cryptoprovider/org.globaltester.cryptoprovider.sc</module>
@@ -134,7 +137,7 @@
 				</plugins>
 			</build>
 		</profile>
-		
+
 	</profiles>
 
 </project>

@@ -6,8 +6,16 @@
 	<fileSets>
 		<fileSet>
 			<excludes>
-				<exclude>PersoSimc*</exclude>
+				<exclude>PersoSim</exclude>
 			</excludes>
+			<directory>target/products/${project.artifactId}/linux/gtk/x86_64</directory>
+			<outputDirectory />
+		</fileSet>
+		<fileSet>
+			<includes>
+				<include>PersoSim</include>
+			</includes>
+			<fileMode>0755</fileMode>
 			<directory>target/products/${project.artifactId}/linux/gtk/x86_64</directory>
 			<outputDirectory />
 		</fileSet>
@@ -17,11 +25,19 @@
 		</fileSet>
 		<fileSet>
 			<includes>
-				<include>PersoSimControllerc*</include>
+				<include>PersoSimController</include>
+			</includes>
+			<fileMode>0755</fileMode>
+			<directory>target/products/de.persosim.simulator.controller.product/linux/gtk/x86_64</directory>
+			<outputDirectory />
+		</fileSet>
+		<fileSet>
+			<includes>
 				<include>PersoSimController.ini</include>
 			</includes>
 			<directory>target/products/de.persosim.simulator.controller.product/linux/gtk/x86_64</directory>
 			<outputDirectory />
 		</fileSet>
+
 	</fileSets>
 </assembly>

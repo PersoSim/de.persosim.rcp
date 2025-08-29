@@ -5,8 +5,19 @@
     </formats>
 	<fileSets>
 		<fileSet>
+			<excludes>
+				<exclude>PersoSim</exclude>
+			</excludes>
 			<directory>target/products/${project.artifactId}/macosx/cocoa/x86_64/PersoSim.app</directory>
 			<outputDirectory>PersoSim.app</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<includes>
+				<include>PersoSim</include>
+			</includes>
+			<fileMode>0755</fileMode>
+			<directory>target/products/de.persosim.simulator.controller.product/macosx/cocoa/x86_64/PersoSim.app/Contents/MacOS</directory>
+			<outputDirectory>PersoSim.app/Contents/MacOS</outputDirectory>
 		</fileSet>
 		<fileSet>
 			<directory>target/products/de.persosim.simulator.controller.product/macosx/cocoa/x86_64/PersoSimController.app/Contents/Eclipse/plugins</directory>
@@ -16,6 +27,7 @@
 			<includes>
 				<include>PersoSimController</include>
 			</includes>
+			<fileMode>0755</fileMode>
 			<directory>target/products/de.persosim.simulator.controller.product/macosx/cocoa/x86_64/PersoSimController.app/Contents/MacOS</directory>
 			<outputDirectory>PersoSim.app/Contents/MacOS</outputDirectory>
 		</fileSet>

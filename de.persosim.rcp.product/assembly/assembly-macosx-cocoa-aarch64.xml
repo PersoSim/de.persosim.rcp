@@ -16,7 +16,7 @@
 				<include>PersoSim</include>
 			</includes>
 			<fileMode>0755</fileMode>
-			<directory>target/products/de.persosim.simulator.controller.product/macosx/cocoa/aarch64/PersoSim.app/Contents/MacOS</directory>
+			<directory>target/products/${project.artifactId}/macosx/cocoa/aarch64/PersoSim.app/Contents/MacOS</directory>
 			<outputDirectory>PersoSim.app/Contents/MacOS</outputDirectory>
 		</fileSet>
 		<fileSet>

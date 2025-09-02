@@ -11,6 +11,8 @@
       </programArgs>
       <vmArgs>-Declipse.application=de.persosim.simulator.controller.PersoSimControllerExt -Xms128m -Xmx512m
       </vmArgs>
+      <vmArgsMac>-XstartOnFirstThread
+      </vmArgsMac>
    </launcherArgs>
 
    <windowImages/>

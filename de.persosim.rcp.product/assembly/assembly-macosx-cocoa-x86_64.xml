@@ -6,7 +6,7 @@
 	<fileSets>
 		<fileSet>
 			<excludes>
-				<exclude>PersoSim</exclude>
+				<exclude>Contents/MacOS/PersoSim</exclude>
 			</excludes>
 			<directory>target/products/${project.artifactId}/macosx/cocoa/x86_64/PersoSim.app</directory>
 			<outputDirectory>PersoSim.app</outputDirectory>

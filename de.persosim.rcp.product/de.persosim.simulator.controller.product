@@ -7,7 +7,7 @@
    </configIni>
 
    <launcherArgs>
-      <programArgs>-nosplash
+      <programArgs>-clearPersistedState -nosplash
       </programArgs>
       <vmArgs>-Declipse.application=de.persosim.simulator.controller.PersoSimControllerExt -Xms128m -Xmx512m
       </vmArgs>

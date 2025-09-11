@@ -22,6 +22,10 @@
          version="0.0.0"/>
 
    <plugin
+         id="de.persosim.simulator.basics"
+         version="0.0.0"/>
+
+   <plugin
          id="de.persosim.simulator"
          version="0.0.0"/>
 

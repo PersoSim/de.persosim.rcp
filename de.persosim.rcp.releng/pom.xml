@@ -26,6 +26,7 @@
     <module>../../de.persosim.rcp/de.persosim.rcp.feature</module>
     <module>../../de.persosim.rcp/de.persosim.rcp.product</module>
     <module>../../de.persosim.simulator/de.persosim.simulator</module>
+    <module>../../de.persosim.simulator/de.persosim.simulator.basics</module>
     <module>../../de.persosim.simulator/de.persosim.simulator.adapter.socket</module>
     <module>../../de.persosim.simulator/de.persosim.simulator.adapter.socket.test</module>
     <module>../../de.persosim.simulator/de.persosim.simulator.adapter.socket.ui</module>

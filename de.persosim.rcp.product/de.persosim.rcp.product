@@ -3,14 +3,13 @@
 
 <product name="PersoSim RCP" uid="de.persosim.rcp.product" id="de.persosim.rcp.product" application="org.eclipse.e4.ui.workbench.swt.E4Application" version="1.2.0.qualifier" type="features" includeLaunchers="true" autoIncludeRequirements="true">
 
-
    <configIni use="default">
    </configIni>
 
    <launcherArgs>
       <programArgs>-clearPersistedState
       </programArgs>
-      <vmArgs>--add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/javax.crypto.spec=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.smartcardio/sun.security.smartcardio=ALL-UNNAMED
+      <vmArgs>-Xms256m -Xmx2048m --add-opens=java.base/java.security=ALL-UNNAMED --add-opens=java.base/javax.crypto.spec=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.smartcardio/sun.security.smartcardio=ALL-UNNAMED
       </vmArgs>
       <vmArgsMac>-XstartOnFirstThread -Dorg.eclipse.swt.internal.carbon.smallFonts
       </vmArgsMac>
@@ -38,7 +37,6 @@
       </win>
    </launcher>
 
-
    <vm>
    </vm>
 
@@ -49,6 +47,7 @@
       <plugin id="de.persosim.rcp"/>
       <plugin id="de.persosim.simulator"/>
       <plugin id="de.persosim.simulator.adapter.socket"/>
+      <plugin id="de.persosim.simulator.basics"/>
       <plugin id="de.persosim.simulator.ui"/>
       <plugin id="javax.annotation"/>
       <plugin id="javax.inject"/>
@@ -142,8 +141,9 @@
    </features>
 
    <configurations>
-      <plugin id="de.persosim.simulator" autoStart="false" startLevel="2" />
+      <plugin id="de.persosim.simulator" autoStart="false" startLevel="3" />
       <plugin id="de.persosim.simulator.adapter.socket" autoStart="true" startLevel="0" />
+      <plugin id="de.persosim.simulator.basics" autoStart="true" startLevel="2" />
       <plugin id="org.apache.felix.scr" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />

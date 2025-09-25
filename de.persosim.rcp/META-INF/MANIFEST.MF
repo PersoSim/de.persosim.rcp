@@ -14,12 +14,17 @@ Require-Bundle: org.eclipse.core.runtime,
  org.eclipse.e4.core.contexts,
  org.eclipse.e4.ui.workbench.swt,
  de.persosim.simulator,
+ de.persosim.simulator.basics,
  de.persosim.simulator.ui,
  org.globaltester.logging,
- jakarta.inject.jakarta.inject-api
+ jakarta.inject.jakarta.inject-api,
+ org.eclipse.e4.core.services,
+ org.eclipse.osgi.services,
+ org.eclipse.osgi
 Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-Vendor: secunet Security Networks AG
 Bundle-ActivationPolicy: lazy
 Bundle-Activator: de.persosim.rcp.Activator
-Import-Package: de.persosim.driver.connector
+Import-Package: 
+ de.persosim.driver.connector
 Automatic-Module-Name: de.persosim.rcp

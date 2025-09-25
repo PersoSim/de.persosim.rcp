@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?pde version="3.5"?>
+
+<product name="PersoSimController" uid="de.persosim.simulator.controller.product" id="de.persosim.simulator.controller.product" application="de.persosim.simulator.controller.PersoSimControllerExt" version="1.3.0.qualifier" type="bundles" includeLaunchers="true" autoIncludeRequirements="true">
+
+
+   <configIni use="default">
+   </configIni>
+
+   <launcherArgs>
+      <programArgs>-nosplash
+      </programArgs>
+      <vmArgs>-Declipse.product=de.persosim.simulator.controller.product -Dorg.eclipse.equinox.simpleconfigurator.configUrl=file:org.eclipse.equinox.simpleconfigurator/bundles_controller.info -Declipse.application=de.persosim.simulator.controller.PersoSimControllerExt -Xms128m -Xmx512m
+      </vmArgs>
+      <vmArgsMac>-XstartOnFirstThread
+      </vmArgsMac>
+   </launcherArgs>
+
+   <windowImages/>
+
+
+   <launcher name="PersoSimController">
+      <win useIco="false">
+         <bmp/>
+      </win>
+   </launcher>
+
+
+   <vm>
+   </vm>
+
+
+   <plugins>
+      <plugin id="de.persosim.simulator.basics"/>
+      <plugin id="de.persosim.simulator.controller"/>
+      <plugin id="jakarta.inject.jakarta.inject-api"/>
+      <plugin id="json"/>
+      <plugin id="org.eclipse.core.contenttype"/>
+      <plugin id="org.eclipse.core.expressions"/>
+      <plugin id="org.eclipse.core.filesystem"/>
+      <plugin id="org.eclipse.core.filesystem.win32.x86_64"/>
+      <plugin id="org.eclipse.core.jobs"/>
+      <plugin id="org.eclipse.core.resources"/>
+      <plugin id="org.eclipse.core.resources.win32.x86_64"/>
+      <plugin id="org.eclipse.core.runtime"/>
+      <plugin id="org.eclipse.equinox.app"/>
+      <plugin id="org.eclipse.equinox.common"/>
+      <plugin id="org.eclipse.equinox.preferences"/>
+      <plugin id="org.eclipse.equinox.region"/>
+      <plugin id="org.eclipse.equinox.registry"/>
+      <plugin id="org.eclipse.equinox.simpleconfigurator"/>
+      <plugin id="org.eclipse.equinox.transforms.hook"/>
+      <plugin id="org.eclipse.equinox.weaving.hook"/>
+      <plugin id="org.eclipse.osgi"/>
+      <plugin id="org.eclipse.osgi.compatibility.state"/>
+      <plugin id="org.globaltester.base"/>
+      <plugin id="org.globaltester.cryptoprovider"/>
+      <plugin id="org.globaltester.lib.jaxws"/>
+      <plugin id="org.globaltester.lib.xstream"/>
+      <plugin id="org.globaltester.logging"/>
+      <plugin id="org.globaltester.logging.consoleLogger"/>
+      <plugin id="org.osgi.service.prefs"/>
+      <plugin id="wrapped.org.jdom.jdom2"/>
+   </plugins>
+
+   <configurations>
+      <plugin id="de.persosim.simulator.controller" autoStart="false" startLevel="2" />
+      <plugin id="org.apache.felix.scr" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
+      <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.event" autoStart="true" startLevel="2" />
+      <plugin id="org.eclipse.equinox.simpleconfigurator" autoStart="true" startLevel="1" />
+   </configurations>
+
+   <preferencesInfo>
+      <targetfile overwrite="false"/>
+   </preferencesInfo>
+
+   <cssInfo>
+   </cssInfo>
+
+</product>

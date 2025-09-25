@@ -7,27 +7,34 @@ import java.nio.file.Path;
 
 import org.eclipse.core.runtime.FileLocator;
 import org.eclipse.jface.dialogs.MessageDialog;
+import org.globaltester.logging.BasicLogger;
+import org.globaltester.logging.tags.LogLevel;
+import org.globaltester.logging.tags.LogTag;
 import org.osgi.framework.Bundle;
 import org.osgi.framework.BundleActivator;
 import org.osgi.framework.BundleContext;
 
 import de.persosim.simulator.CommandParser;
 import de.persosim.simulator.PersoSim;
+import de.persosim.simulator.log.PersoSimLogTags;
 import de.persosim.simulator.perso.Personalization;
 import de.persosim.simulator.perso.export.ProfileHelper;
 import de.persosim.simulator.preferences.EclipsePreferenceAccessor;
 import de.persosim.simulator.preferences.PersoSimPreferenceManager;
-import de.persosim.simulator.ui.parts.PersoSimPart;
 
 public class Activator implements BundleActivator
 {
+	public static final String DEFAULT_PERSO_FILE = "Profile01.perso";
 
 	@Override
 	public void start(BundleContext context) throws Exception
 	{
+		BasicLogger.log("START Activator RCP", LogLevel.TRACE, new LogTag(BasicLogger.LOG_TAG_TAG_ID, PersoSimLogTags.SYSTEM_TAG_ID));
 		PersoSimPreferenceManager.setPreferenceAccessorIfNotAvailable(new EclipsePreferenceAccessor());
+		LogHelper.logEnvironmentInfo();
 		de.persosim.simulator.Activator.getDefault().enableService();
 		startSimAndConnectToNativeDriver();
+		BasicLogger.log("END Activator RCP", LogLevel.TRACE, new LogTag(BasicLogger.LOG_TAG_TAG_ID, PersoSimLogTags.SYSTEM_TAG_ID));
 	}
 
 	@Override
@@ -47,13 +54,12 @@ public class Activator implements BundleActivator
 		de.persosim.simulator.Activator persoSimActivator = de.persosim.simulator.Activator.getDefault();
 		PersoSim sim = persoSimActivator.getSim();
 		try {
-			sim.startSimulator();
 			sim.loadPersonalization(getDefaultPersonalization());
+			sim.logStartOK();
 		}
 		catch (IOException e) {
 			e.printStackTrace();
 			MessageDialog.openError(null, "Error", "Failed to automatically load default personalization");
-			return;
 		}
 	}
 
@@ -76,8 +82,8 @@ public class Activator implements BundleActivator
 
 		ProfileHelper.createAllMissingOverlayProfileFiles(ProfileHelper.getRootPathPersoFiles());
 
-		pathString = pathString + File.separator + PersoSimPart.PERSO_FILE;
-		System.out.println("Loading default personalization from '" + pathString + "'.");
+		pathString = pathString + File.separator + DEFAULT_PERSO_FILE;
+		BasicLogger.log("Loading default personalization from '" + pathString + "'.", LogLevel.INFO, new LogTag(BasicLogger.LOG_TAG_TAG_ID, PersoSimLogTags.PERSO_TAG_ID));
 
 		return CommandParser.getPerso(pathString, true);
 	}

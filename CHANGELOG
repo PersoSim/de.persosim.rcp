@@ -1,12 +1,14 @@
-Version 1.3.0 (00.00.0000)
+Version 1.3.1 (00.00.0000)
 
 * SNAPSHOT-RELEASE
 
 
-Version 1.2.0 (18.06.2025)
+Version 1.2.0 (09.09.2025)
 
 * Allow using Frank Morgner's VSmartcard Android app as hardware simulation device
-* Add CAv3,ENVELOPE and COMPARE protocols
+* Add CAv3, ENVELOPE and COMPARE protocols
+* Editor/Simulator: Profiles updated; Smart-eID profiles removed
+
 
 
 Version 1.1.1 (08.05.2025)

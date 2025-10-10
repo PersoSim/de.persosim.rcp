@@ -31,8 +31,8 @@ public class Activator implements BundleActivator
 	{
 		BasicLogger.log("START Activator RCP", LogLevel.TRACE, new LogTag(BasicLogger.LOG_TAG_TAG_ID, PersoSimLogTags.SYSTEM_TAG_ID));
 		PersoSimPreferenceManager.setPreferenceAccessorIfNotAvailable(new EclipsePreferenceAccessor());
-		LogHelper.logEnvironmentInfo();
 		de.persosim.simulator.Activator.getDefault().enableService();
+		LogHelper.logEnvironmentInfo();
 		startSimAndConnectToNativeDriver();
 		BasicLogger.log("END Activator RCP", LogLevel.TRACE, new LogTag(BasicLogger.LOG_TAG_TAG_ID, PersoSimLogTags.SYSTEM_TAG_ID));
 	}

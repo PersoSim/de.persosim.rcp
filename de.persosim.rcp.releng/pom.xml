@@ -53,6 +53,7 @@
     <module>../../org.globaltester.lib.jaxws/org.globaltester.lib.jaxws</module>
     <module>../../org.globaltester.parent/org.globaltester.parent.target</module>
     <module>../../org.globaltester.clverify/org.globaltester.clverify</module>
+    <module>../../org.globaltester.chameleonmini/org.globaltester.chameleonmini</module>
   </modules>
 
   <profiles>

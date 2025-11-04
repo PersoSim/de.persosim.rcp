@@ -26,6 +26,10 @@
          version="0.0.0"/>
 
    <plugin
+         id="de.persosim.simulator.soap"
+         version="0.0.0"/>
+
+   <plugin
          id="de.persosim.simulator"
          version="0.0.0"/>
 

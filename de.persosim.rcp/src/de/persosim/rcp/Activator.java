@@ -16,6 +16,7 @@ import org.osgi.framework.BundleContext;
 
 import de.persosim.simulator.CommandParser;
 import de.persosim.simulator.PersoSim;
+import de.persosim.simulator.log.LinkedListLogListener;
 import de.persosim.simulator.log.PersoSimLogTags;
 import de.persosim.simulator.perso.Personalization;
 import de.persosim.simulator.perso.export.ProfileHelper;
@@ -24,6 +25,9 @@ import de.persosim.simulator.preferences.PersoSimPreferenceManager;
 
 public class Activator implements BundleActivator
 {
+	private static final int MAXIMUM_CACHED_CONSOLE_LINES = 100000;
+	private static LinkedListLogListener linkedListLogger = new LinkedListLogListener(MAXIMUM_CACHED_CONSOLE_LINES);
+
 	public static final String DEFAULT_PERSO_FILE = "Profile01.perso";
 
 	@Override
@@ -31,9 +35,12 @@ public class Activator implements BundleActivator
 	{
 		BasicLogger.log("START Activator RCP", LogLevel.TRACE, new LogTag(BasicLogger.LOG_TAG_TAG_ID, PersoSimLogTags.SYSTEM_TAG_ID));
 		PersoSimPreferenceManager.setPreferenceAccessorIfNotAvailable(new EclipsePreferenceAccessor());
+		BasicLogger.addLogListener(linkedListLogger);
 		LogHelper.logEnvironmentInfo();
+		de.persosim.simulator.ui.Activator.getDefault().setListLogListener(linkedListLogger);
 		de.persosim.simulator.Activator.getDefault().enableService();
 		startSimAndConnectToNativeDriver();
+		de.persosim.simulator.soap.Activator.getDefault(); // call it just for bundle activation
 		BasicLogger.log("END Activator RCP", LogLevel.TRACE, new LogTag(BasicLogger.LOG_TAG_TAG_ID, PersoSimLogTags.SYSTEM_TAG_ID));
 	}
 
@@ -41,6 +48,7 @@ public class Activator implements BundleActivator
 	public void stop(BundleContext context) throws Exception
 	{
 		de.persosim.simulator.Activator.getDefault().disableService();
+		// BasicLogger.removeLogListener(linkedListLogger); // do not remove log listener
 	}
 
 	/**
@@ -72,8 +80,8 @@ public class Activator implements BundleActivator
 	 */
 	private Personalization getDefaultPersonalization() throws IOException
 	{
-		Bundle plugin = de.persosim.simulator.Activator.getContext().getBundle();
-		URL url = plugin.getEntry("personalization/" + ProfileHelper.PERSO_FILES_PARENT_DIR);
+		Bundle pluginSimulator = de.persosim.simulator.Activator.getContext().getBundle();
+		URL url = pluginSimulator.getEntry("personalization/" + ProfileHelper.PERSO_FILES_PARENT_DIR);
 		URL resolvedUrl = FileLocator.resolve(url);
 		File folder = new File(resolvedUrl.getFile());
 		String pathString = folder.getAbsolutePath();

@@ -20,7 +20,8 @@ Require-Bundle: org.eclipse.core.runtime,
  jakarta.inject.jakarta.inject-api,
  org.eclipse.e4.core.services,
  org.eclipse.osgi.services,
- org.eclipse.osgi
+ org.eclipse.osgi,
+ de.persosim.simulator.soap
 Bundle-RequiredExecutionEnvironment: JavaSE-17
 Bundle-Vendor: secunet Security Networks AG
 Bundle-ActivationPolicy: lazy

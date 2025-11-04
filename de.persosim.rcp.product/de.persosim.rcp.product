@@ -48,6 +48,7 @@
       <plugin id="de.persosim.simulator"/>
       <plugin id="de.persosim.simulator.adapter.socket"/>
       <plugin id="de.persosim.simulator.basics"/>
+      <plugin id="de.persosim.simulator.soap"/>
       <plugin id="de.persosim.simulator.ui"/>
       <plugin id="javax.annotation"/>
       <plugin id="javax.inject"/>
@@ -144,6 +145,7 @@
       <plugin id="de.persosim.simulator" autoStart="false" startLevel="3" />
       <plugin id="de.persosim.simulator.adapter.socket" autoStart="true" startLevel="0" />
       <plugin id="de.persosim.simulator.basics" autoStart="true" startLevel="2" />
+      <plugin id="de.persosim.simulator.soap" autoStart="true" startLevel="2" />
       <plugin id="org.apache.felix.scr" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />

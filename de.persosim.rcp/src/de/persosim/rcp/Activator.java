@@ -35,6 +35,7 @@ public class Activator implements BundleActivator
 	{
 		BasicLogger.log("START Activator RCP", LogLevel.TRACE, new LogTag(BasicLogger.LOG_TAG_TAG_ID, PersoSimLogTags.SYSTEM_TAG_ID));
 		PersoSimPreferenceManager.setPreferenceAccessorIfNotAvailable(new EclipsePreferenceAccessor());
+		PersoSimPreferenceManager.storePreference("PREF_NON_INTERACTIVE", Boolean.FALSE.toString(), false); // Reset to default gui-based mode
 		BasicLogger.addLogListener(linkedListLogger);
 		LogHelper.logEnvironmentInfo();
 		de.persosim.simulator.ui.Activator.getDefault().setListLogListener(linkedListLogger);

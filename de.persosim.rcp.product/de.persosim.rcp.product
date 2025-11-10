@@ -142,10 +142,8 @@
    </features>
 
    <configurations>
-      <plugin id="de.persosim.simulator" autoStart="false" startLevel="3" />
+      <plugin id="de.persosim.simulator" autoStart="false" startLevel="2" />
       <plugin id="de.persosim.simulator.adapter.socket" autoStart="true" startLevel="0" />
-      <plugin id="de.persosim.simulator.basics" autoStart="true" startLevel="2" />
-      <plugin id="de.persosim.simulator.soap" autoStart="true" startLevel="2" />
       <plugin id="org.apache.felix.scr" autoStart="true" startLevel="2" />
       <plugin id="org.eclipse.core.runtime" autoStart="true" startLevel="0" />
       <plugin id="org.eclipse.equinox.common" autoStart="true" startLevel="2" />

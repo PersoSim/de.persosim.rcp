@@ -1,0 +1,49 @@
+<assembly>
+    <id>linux.gtk.aarch64</id>
+    <formats>
+        <format>tar.gz</format>
+    </formats>
+	<fileSets>
+		<fileSet>
+			<excludes>
+				<exclude>PersoSim</exclude>
+			</excludes>
+			<directory>target/products/${project.artifactId}/linux/gtk/aarch64</directory>
+			<outputDirectory />
+		</fileSet>
+		<fileSet>
+			<includes>
+				<include>PersoSim</include>
+			</includes>
+			<fileMode>0755</fileMode>
+			<directory>target/products/${project.artifactId}/linux/gtk/aarch64</directory>
+			<outputDirectory />
+		</fileSet>
+		<fileSet>
+			<directory>target/products/de.persosim.simulator.controller.product/linux/gtk/aarch64/plugins</directory>
+			<outputDirectory>plugins</outputDirectory>
+		</fileSet>
+		<fileSet>
+			<includes>
+				<include>PersoSimController</include>
+			</includes>
+			<fileMode>0755</fileMode>
+			<directory>target/products/de.persosim.simulator.controller.product/linux/gtk/aarch64</directory>
+			<outputDirectory />
+		</fileSet>
+		<fileSet>
+			<includes>
+				<include>PersoSimController.ini</include>
+			</includes>
+			<directory>target/products/de.persosim.simulator.controller.product/linux/gtk/aarch64</directory>
+			<outputDirectory />
+		</fileSet>
+	</fileSets>
+	<files>
+		<file>
+			<source>target/products/de.persosim.simulator.controller.product/linux/gtk/aarch64/configuration/org.eclipse.equinox.simpleconfigurator/bundles.info</source>
+			<outputDirectory>configuration/org.eclipse.equinox.simpleconfigurator</outputDirectory>
+			<destName>bundles_controller.info</destName>
+		</file>
+	</files>
+</assembly>

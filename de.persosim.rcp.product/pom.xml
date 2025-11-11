@@ -35,6 +35,11 @@
 		<p2.ws4>cocoa</p2.ws4>
 		<p2.arch4>aarch64</p2.arch4>
 		<assembly4>${project.basedir}/assembly/assembly-macosx-cocoa-aarch64.xml</assembly4>
+		<productDestination5>${project.build.directory}/products/${project.artifactId}/linux/gtk/aarch64</productDestination5>
+		<p2.os5>linux</p2.os5>
+		<p2.ws5>gtk</p2.ws5>
+		<p2.arch5>aarch64</p2.arch5>
+		<assembly5>${project.basedir}/assembly/assembly-linux-gtk-aarch64.xml</assembly5>
 	</properties>
 
 	<profiles>
@@ -124,6 +129,7 @@
 										<descriptor>${assembly2}</descriptor>
 										<descriptor>${assembly3}</descriptor>
 										<descriptor>${assembly4}</descriptor>
+										<descriptor>${assembly5}</descriptor>
 									</descriptors>
 								</configuration>
 							</execution>

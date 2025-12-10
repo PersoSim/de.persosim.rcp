@@ -40,6 +40,7 @@ public class Activator implements BundleActivator
 		LogHelper.logEnvironmentInfo();
 		de.persosim.simulator.ui.Activator.getDefault().setListLogListener(linkedListLogger);
 		de.persosim.simulator.Activator.getDefault().enableService();
+		LogHelper.logEnvironmentInfo();
 		startSimAndConnectToNativeDriver();
 		de.persosim.simulator.soap.Activator.getDefault(); // call it just for bundle activation
 		BasicLogger.log("END Activator RCP", LogLevel.TRACE, new LogTag(BasicLogger.LOG_TAG_TAG_ID, PersoSimLogTags.SYSTEM_TAG_ID));
@@ -49,7 +50,6 @@ public class Activator implements BundleActivator
 	public void stop(BundleContext context) throws Exception
 	{
 		de.persosim.simulator.Activator.getDefault().disableService();
-		// BasicLogger.removeLogListener(linkedListLogger); // do not remove log listener
 	}
 
 	/**

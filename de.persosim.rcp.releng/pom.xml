@@ -55,6 +55,7 @@
     <module>../../org.globaltester.parent/org.globaltester.parent.target</module>
     <module>../../org.globaltester.clverify/org.globaltester.clverify</module>
     <module>../../org.globaltester.chameleonmini/org.globaltester.chameleonmini</module>
+    <module>../../org.globaltester.chameleonmini/org.globaltester.chameleonmini.test</module>
   </modules>
 
   <profiles>

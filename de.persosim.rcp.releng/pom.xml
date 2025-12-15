@@ -70,7 +70,7 @@
 					<plugin>
 						<groupId>org.owasp</groupId>
 						<artifactId>dependency-check-maven</artifactId>
-						<version>1.5.1-SNAPSHOT</version>
+						<version>${dependency-check-maven.version}</version>
 						<configuration>
 							<!-- disable all NVD CVE/CPE, retireJS updates; use this only temporarily! -->
 							<!-- <autoUpdate>false</autoUpdate> -->

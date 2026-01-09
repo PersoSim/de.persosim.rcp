@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>org.globaltester</groupId>
 		<artifactId>org.globaltester.parent.product</artifactId>
-		<version>4.1.6-SNAPSHOT</version>
+		<version>4.1.7-SNAPSHOT</version>
 		<relativePath>
 			../../org.globaltester.parent/org.globaltester.parent.product/
 		</relativePath>
@@ -12,7 +12,7 @@
 	<groupId>de.persosim</groupId>
 	<artifactId>de.persosim.rcp.product</artifactId>
 	<packaging>eclipse-repository</packaging>
-	<version>1.5.1-SNAPSHOT</version>
+	<version>1.5.2-SNAPSHOT</version>
 
 	<properties>
 		<productDestination1>${project.build.directory}/products/${project.artifactId}/win32/win32/x86_64</productDestination1>

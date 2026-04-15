@@ -129,7 +129,6 @@
       <plugin id="org.globaltester.logging"/>
       <plugin id="org.globaltester.logging.consoleLogger"/>
       <plugin id="org.globaltester.clverify"/>
-      <plugin id="org.globaltester.chameleonmini"/>
       <plugin id="org.hamcrest.core"/>
       <plugin id="org.junit"/>
       <plugin id="org.w3c.css.sac"/>

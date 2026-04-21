@@ -1,6 +1,6 @@
-Version 1.5.6 (00.00.0000)
+Version 1.6.0 (00.00.0000)
 
-* SNAPSHOT-RELEASE
+* Support for using a hardware device for card simulation (COMPRION CL Verify A)
 
 
 Version 1.4.0 (11.11.2025)
